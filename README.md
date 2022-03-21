@@ -5,9 +5,9 @@
 
 ## Project Goals 
 <ul>
-    <li> The main goal of this project is to allow users to play a hangman game based on the counties of Ireland so they can test their knowledge.</li>
-    <li>It also aims to create a game with a good user experience that offers real world feedback to the user.</li>
-    <li> Finally the game is connect to a database (google spreadsheets) to allow the owner of the game to host a platform that will gather user information that could be used for the site's analytics.</li>
+    <li> The main goal of this project is to create a platform for locals of Donegal to have a place to read and stay informed about the goings on.</li>
+    <li>It also aims to create a place for locals to have a public platform (through a comments section) about the stories that have come out of the recent court hearings.</li>
+    <li> Finally, the blog will be fully functional from an admin point of view where the admin can manage posts and comments that will be display on the site. They are also responisble for adding content to the site, so any posts that are written need to be editable.</li>
 </ul>
 <hr>
 
