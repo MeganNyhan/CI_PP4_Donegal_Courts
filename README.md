@@ -38,7 +38,7 @@
 ### User Experience:
 
 ### Target Audience 
-<p>Hangman is a game that is easily understanded by those who play it, but as the topic of the game is the Irish counties, this restricts those that can play the game. Because of this the target audience of this game is limited to residents of Ireland and those that have access to a computer - which is still quite broad. </p>
+<p>The Donegal Courts blog was inspired by the local newspaper of Donegal - the Donegal News/ Derry people, so the target audience would be of readers of that or for people who are native to Donegal that live away and want to stay up to date. In short, the Target audience is mainly Donegal Natives or people who have Donegal Ties that want to stay up to date with the court listings. </p>
 
 ### User Requirements
 <p>As I have mentioned, we have a very large/ yet niche target audience, and becasue of this the site has to be simple in design and very accessible, to those who have computers and have geographical knowledge of Ireland. Aiding this knowledge I have created a game with:</p>
