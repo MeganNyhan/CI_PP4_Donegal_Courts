@@ -1,7 +1,15 @@
 # Donegal Courts Blog
  
 <img src="docs/mock-up/mock-up.png" alt="Mockup of my blog across multiple devices">
-<a href="https://ci-pp3-hangman.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
+<a href="https://donegalcourts.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
+
+## Project Goals 
+<ul>
+    <li> The main goal of this project is to allow users to play a hangman game based on the counties of Ireland so they can test their knowledge.</li>
+    <li>It also aims to create a game with a good user experience that offers real world feedback to the user.</li>
+    <li> Finally the game is connect to a database (google spreadsheets) to allow the owner of the game to host a platform that will gather user information that could be used for the site's analytics.</li>
+</ul>
+<hr>
 
 ## Table of Contents
 1. [Project Goals](#project-goals)
@@ -26,15 +34,6 @@
 9. [Credits](#credits)
 10. [Acknowledgements](#acknowledgements)
 11. [Future Features](#future-features)
-
-
-## Project Goals 
-<ul>
-    <li> The main goal of this project is to allow users to play a hangman game based on the counties of Ireland so they can test their knowledge.</li>
-    <li>It also aims to create a game with a good user experience that offers real world feedback to the user.</li>
-    <li> Finally the game is connect to a database (google spreadsheets) to allow the owner of the game to host a platform that will gather user information that could be used for the site's analytics.</li>
-</ul>
-<hr>
 
 ### User Experience:
 
