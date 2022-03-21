@@ -1,7 +1,7 @@
-# Hangman - Irish Counties Edition
+# Donegal Courts Blog
  
-<img src="docs/mock-up/mock-up.png" alt="Mockup of my website across multiple devices">
-<a href="https://ci-pp3-hangman.herokuapp.com/" alt="link to hangman game" target="_blank" rel="noopener">Link to My Hangman Game</a>
+<img src="docs/mock-up/mock-up.png" alt="Mockup of my blog across multiple devices">
+<a href="https://ci-pp3-hangman.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
 
 ## Table of Contents
 1. [Project Goals](#project-goals)
