@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+# This tuple will keep track of drafted posts and published posts
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
@@ -33,11 +34,11 @@ class Post(models.Model):
         """
         ordering = ['-created_on']
 
-    def __str__(self):
+    def str(self):
         """
         Return the post's title string.
         """
-        return f' title {self.title}'
+        return str(self.title)
 
 
 class Comment(models.Model):
