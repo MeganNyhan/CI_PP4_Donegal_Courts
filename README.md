@@ -41,7 +41,7 @@
 <p>The Donegal Courts blog was inspired by the local newspaper of Donegal - the Donegal News/ Derry people, so the target audience would be of readers of that or for people who are native to Donegal that live away and want to stay up to date. In short, the Target audience is mainly Donegal Natives or people who have Donegal Ties that want to stay up to date with the court listings. </p>
 
 ### User Requirements
-<p>As I have mentioned, we have a very large/ yet niche target audience, and becasue of this the site has to be simple in design and very accessible, to those who have computers and have geographical knowledge of Ireland. Aiding this knowledge I have created a game with:</p>
+<p>As I have mentioned, the blog has a very niche target audience. However, the age demographics are quite broad and because of this the blog has to be easy to use for every age group. I have taken the following approach to make sure that all User Requirements to access and use the blog has been covered:</p>
 <ul>
     <li> Straightforward navigation through intro and game play, including a possibility to replay the game.</li>
     <li>The game has real time feedback for users which allows them to understand if their guess is right, wrong or invalid.</li>
