@@ -1,14 +1,18 @@
 """
 imports from Django.
 """
-
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Post(models.Model):
+    """
+    This post model will allow me to post onto the
+    site, using the required variables.
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
@@ -18,23 +22,30 @@ class Post(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    status = models.IntegerField(choices=STATUS, default=1)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
     class Meta:
+        """
+        This orders my blog posts in descending order from the date it was
+        created on.
+        Oldest to Newest.
+        """
         ordering = ['-created_on']
 
     def __str__(self):
         """
-        Return title string
+        Return the post's title string.
         """
-        return self.title
+        return f' title {self.title}'
 
-    def number_of_likes(self):
-        return self.likes.Count()
 
 class Comment(models.Model):
-
+    """
+    This comment model allows the user to leave a comment.
+    The information included is name, email, comment and date
+    it was created on.
+    """
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name='comments')
     name = models.CharField(max_length=80)
@@ -44,10 +55,13 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
+        """
+        Again this model orders the comments in descending order.
+        """
         ordering = ['created_on']
 
-    def __str__(self):
+    def __repr__(self):
         """
-        Returns an f string of the comments body and name
+        Returns an f string of the comments body and name.
         """
         return f'Comment {self.body} by {self.name}'
