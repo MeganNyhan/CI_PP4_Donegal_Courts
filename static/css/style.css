@@ -1,14 +1,18 @@
 /*-- CSS file from ci projects --*/
 
+p{
+    color: black;
+}
+
 body {
     background-color: #F9FAFC;
 }
 
 .brand {
-    font-family: Lato, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #fff;
 }
 
 .red-o {
@@ -35,7 +39,10 @@ body {
     border: none;
     background-color: transparent;
 }
-
+.card-img-top{
+    height:250px;
+    width: 95%;
+}
 .image-container {
     position: relative;
 }
@@ -45,7 +52,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #ce840d;
 }
 
 .author {
@@ -90,12 +97,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: black;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: maroon;
 }
 
 .post-title {
@@ -119,26 +126,38 @@ body {
     color: #23BBBB;
 }
 
-.link {
-    color: #23BBBB;
+/*--- Footer Styling ---*/
+footer > p, h3{
+    color: #fff;
+}
+
+.disclaimer{
+    padding-top: 15px;
+    color: #fff;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+
+.contact{
+    color: #fff;
+    margin-left: 25%; 
+}
+
+.link{
+    color: #fff;
+}
+
+.sm-link{
+    margin-left: 30%; 
     text-decoration: none;
+    list-style: none;
 }
 
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
+a{
+    color:white;
+    text-decoration: none
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
+li .nav_item{
+    color: white;
 }
