@@ -81,6 +81,10 @@
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
+                {% if commented %}
+                <div class="alert alert-success" role="alert">
+                    Your Comment is currently awaiting approval by the site admin. Please log in later to view your comment.
+                </div>
                 {% if user.is_authenticated %}
 
                 <h3> Share your Thoughts, Leave a Comment:</h3>
