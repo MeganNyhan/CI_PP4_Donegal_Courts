@@ -66,3 +66,11 @@ class Comment(models.Model):
         Returns an f string of the comments body and name.
         """
         return f'Comment {self.body} by {self.name}'
+
+class Carausel(models.Model):
+    image = models.ImageField(upload_to='pics/%y/%m/%d/')
+    title = models.CharField(max_length=150)
+    sub_title = models.ChaField(max_length=100)
+
+    def __str__(self):
+        return self.title
