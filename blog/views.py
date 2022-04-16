@@ -60,3 +60,4 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
