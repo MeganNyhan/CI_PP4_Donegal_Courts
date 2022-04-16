@@ -67,10 +67,17 @@ class Comment(models.Model):
         """
         return f'Comment {self.body} by {self.name}'
 
+
 class Carausel(models.Model):
+    """
+        This model calls the items for display
+    """
     image = models.ImageField(upload_to='pics/%y/%m/%d/')
     title = models.CharField(max_length=150)
-    sub_title = models.ChaField(max_length=100)
+    sub_title = models.CharField(max_length=100)
 
-    def __str__(self):
-        return self.title
+    def str(self):
+        """
+        Return the post's title string.
+        """
+        return str(self.title)
