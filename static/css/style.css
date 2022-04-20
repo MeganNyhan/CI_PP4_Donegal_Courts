@@ -1,4 +1,4 @@
-/*--Nav Bar --*/
+/*-- Nav Bar --*/
 .navbar-light 
 .navbar-nav 
 .nav-link.active{
@@ -175,4 +175,6 @@ li .nav_item{
     color: white;
 }
 
-
+#comment{
+    color:black;
+}

@@ -15,6 +15,7 @@ class Post(models.Model):
     site, using the required variables.
     """
     title = models.CharField(max_length=200, unique=True)
+    header_image = models.ImageField(null=True, blank=True,)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="blog_post")
@@ -67,17 +68,3 @@ class Comment(models.Model):
         """
         return f'Comment {self.body} by {self.name}'
 
-
-class Carausel(models.Model):
-    """
-        This model calls the items for display
-    """
-    image = models.ImageField(upload_to='pics/%y/%m/%d/')
-    title = models.CharField(max_length=150)
-    sub_title = models.CharField(max_length=100)
-
-    def str(self):
-        """
-        Return the post's title string.
-        """
-        return str(self.title)

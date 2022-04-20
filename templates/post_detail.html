@@ -17,7 +17,7 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <img src="{https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg}" width="100%">
                 {% else %}
                 <img src="" width="100%">
                 {% endif %}
@@ -53,7 +53,7 @@
     </div>
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
+            <h3 id="comment">Comments:</h3>
             <div class="card-body">
                 <!-- We want a for loop inside the tags to iterate through each comment in comments -->
                 {% for comment in comments %}
@@ -82,7 +82,7 @@
                 {% else %}
                 {% if user.is_authenticated %}
 
-                <h3> Share your Thoughts, Leave a Comment:</h3>
+                <h3 id="comment"> Share your Thoughts, Leave a Comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
@@ -95,5 +95,4 @@
         </div>
     </div>
 </div>
-
 {% endblock content %}
