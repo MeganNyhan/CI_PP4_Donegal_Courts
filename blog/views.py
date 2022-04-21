@@ -1,10 +1,8 @@
 # imports
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
 
-def home(request):
-    """ 
-        renders home page
-    """
-    return render(request, 'home.html', {})
-
+class HomeView(ListView):
+    model = Post
+    template_name = 'home.html'
