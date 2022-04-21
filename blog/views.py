@@ -10,3 +10,11 @@ class HomeView(ListView):
     """
     model = Post
     template_name = 'home.html'
+
+
+class PostDetailView(DetailView):
+    """
+        Create view for blog post details in post detail page
+    """
+    model = Post
+    template_name = 'post_detail.html'

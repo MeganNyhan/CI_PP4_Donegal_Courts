@@ -12,16 +12,9 @@
 </head>
 <body>
 
-<h1>Post</h1>
-
-<ul>
-{% for post in object_list %}
-       <li><a href="{% url 'post-detail' post.pk %}"> {{post.title }} - {{ post.author.first_name }}</a><br>
-        {{ post.body }}</li>
-{% endfor %}
-</ul>
+    <h1> {{ post.title }}</h1>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-</html>>
+</html>
