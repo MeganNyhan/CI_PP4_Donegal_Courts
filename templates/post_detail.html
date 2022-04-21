@@ -13,6 +13,13 @@
 <body>
 
     <h1> {{ post.title }}</h1>
+    <small> By: {{ post.author.first_name }}</small>
+    <hr>
+    <br/>
+    {{ post.body }}
+
+    <br/><br/>
+    <a href="{% url 'home' %}">Back</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
