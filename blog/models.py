@@ -14,7 +14,8 @@ class Post(models.Model):
     This post model will allow me to post onto the
     site, using the required variables.
     """
-    title = models.CharField(max_length=200, unique=True)
+    title = models.CharField(max_length=255, unique=True)
+    title_tag = models.CharField(max_length=200, default="Donegal Courts")
     author = models.ForeignKey(User, on_delete=models.CASCADE,)
     body = models.TextField()
 
