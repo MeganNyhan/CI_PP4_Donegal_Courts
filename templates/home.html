@@ -12,9 +12,14 @@
 </head>
 <body>
 
-    <h1>Post</h1>
+<h1>Post</h1>
 
-   {% for post in object_list %}
+<ul>
+{% for post in object_list %}
+       <li>{{ post.title }} - {{ post.author }}<br>
+        {{ post.body }}</li>
+{% endfor %}
+</ul>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
