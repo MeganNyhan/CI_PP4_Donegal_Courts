@@ -1,6 +1,5 @@
 # imports
-from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
 
 
@@ -18,3 +17,12 @@ class PostDetailView(DetailView):
     """
     model = Post
     template_name = 'post_detail.html'
+
+
+class AddPostView(CreateView):
+    """
+        Create Add post view for creating blog posts on the site
+    """
+    model = Post
+    template_name = 'add_post.html'
+    fields = '__all__'
