@@ -11,6 +11,8 @@
 
     <br/><br/>
     <a class="btn btn-dark" href="{% url 'home' %}">Back</a> 
-    <a class="btn btn-danger"href="{% url 'update-post' post.pk %}"> Edit</a>
+    <small>
+    <a class="btn btn-warning"href="{% url 'update-post' post.pk %}"> Edit</a>
+    <a class="btn btn-danger"href="{% url 'delete-post' post.pk %}"> Delete</a></small>
 
 {% endblock %}
