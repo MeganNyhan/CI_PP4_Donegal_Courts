@@ -4,6 +4,7 @@ imports from Django.
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
+from datetime import datetime, date
 # from cloudinary.models import CloudinaryField
 
 # This tuple will keep track of drafted posts and published posts
@@ -19,6 +20,7 @@ class Post(models.Model):
     title_tag = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE,)
     body = models.TextField()
+    post_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return str(self.title)
