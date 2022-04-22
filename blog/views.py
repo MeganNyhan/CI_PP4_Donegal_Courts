@@ -1,5 +1,6 @@
 # imports
-from django.views.generic import ListView, DetailView, CreateView
+from django.shortcuts import render
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from .models import Post
 from .forms import PostForm
 
@@ -27,3 +28,12 @@ class AddPostView(CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
+
+
+class UpdatePostView(UpdateView):
+    """
+        Edite post view for editing/updating blog posts on the site
+    """
+    model = Post
+    template_name = 'update_post.html'
+    fields = ['title', 'title_tag', 'body']

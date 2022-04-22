@@ -10,6 +10,7 @@
     {{ post.body }}
 
     <br/><br/>
-    <a class="btn btn-dark" href="{% url 'home' %}">Back</a>
+    <a class="btn btn-dark" href="{% url 'home' %}">Back</a> 
+    <a class="btn btn-danger"href="{% url 'update-post' post.pk %}"> Edit</a>
 
 {% endblock %}
