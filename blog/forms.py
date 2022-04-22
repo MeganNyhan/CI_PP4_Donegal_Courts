@@ -19,4 +19,18 @@ class PostForm(forms.ModelForm):
         }
 
 
+class EditForm(forms.ModelForm):
+    """
+        This is the EDIT form for the create a news story post editor
+    """
+    class Meta:
+        model = Post
+        fields = ('title', 'body')
+
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'This is the Title Input'}),
+            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'This is the Body Text Input'})
+        }
+
+
 
