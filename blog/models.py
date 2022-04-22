@@ -16,7 +16,7 @@ class Post(models.Model):
     site, and create the required variables fields.
     """
     title = models.CharField(max_length=255, unique=True)
-    title_tag = models.CharField(max_length=200, default="Donegal Courts")
+    title_tag = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE,)
     body = models.TextField()
 
