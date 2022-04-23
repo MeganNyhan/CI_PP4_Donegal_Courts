@@ -7,7 +7,7 @@
     <small> By: {{ post.author.first_name }} - {{ post.post_date }}</small>
     <hr>
     <br/>
-    {{ post.body }}
+    {{ post.body|safe }}
 
     <br/><br/>
     <a class="btn btn-dark" href="{% url 'home' %}">Back</a> 
