@@ -26,6 +26,16 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
               </li>
+              {% if user.is_authenticated %}
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Log Out</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'add_post' %}}">Create new post</a>
+              </li>
+
+              {% else %}
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Login</a>
               </li>
@@ -38,9 +48,12 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{% url 'home' %}">Read the Latest Court Story</a></li>
-                  <li><a class="dropdown-item" href="{% url 'add_post' %}">Post A New Court Story</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              {% endif %}
                 </ul>
               </li>
             </ul>
