@@ -3,16 +3,20 @@
 {% block title %}Create a New Court News Story{% endblock %}
 
 {% block content %}
-<br/><br/>
-<h1>Create a New Court News Story</h1>
-<br/><br/>
-<div class="form-group">
-    <form method="POST">
-
-        {%csrf_token%}
-       {{ form.as_p }}
-
-    <button class="btn btn-dark">Post</button>
-</div>    
+    {% if user.is_authenticated %}
+        <br/><br/>
+        <h1>Create a New Court News Story</h1>
+        <br/><br/>
+        <div class="form-group">
+            <form method="POST">
+            
+                {%csrf_token%}
+               {{ form.as_p }}
+            
+            <button class="btn btn-dark">Post</button>
+        </div>    
+    {% else %}
+        <p> You're not allowed here !</p>
+    {% endif %}
 
 {% endblock %}
