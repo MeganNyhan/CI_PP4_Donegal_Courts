@@ -19,7 +19,7 @@ class Post(models.Model):
     """
     title = models.CharField(max_length=255, unique=True)
     title_tag = models.CharField(max_length=200)
-    snippet = models.CharField(max_length=255, default='Click Link Above To Read Blog Post')
+    snippet = models.CharField(max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = RichTextField(blank=True, null=True)
     post_date = models.DateField(auto_now_add=True)
