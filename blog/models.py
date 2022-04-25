@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from datetime import datetime, date
+from ckeditor.fields import RichTextField
 # from cloudinary.models import CloudinaryField
 
 # This tuple will keep track of drafted posts and published posts
@@ -19,7 +20,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255, unique=True)
     title_tag = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE,)
-    body = models.TextField()
+    body = RichTextField(blank=True, null=True)
     post_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
