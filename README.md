@@ -47,29 +47,32 @@
 ### User Requirements
 <p>As I have mentioned, the blog has a very niche target audience. However, the age demographics are quite broad and because of this the blog has to be easy to use for every age group. I have taken the following approach to make sure that all User Requirements to access and use the blog has been covered:</p>
 <ul>
-    <li> Straightforward navigation through intro and game play, including a possibility to replay the game.</li>
-    <li>The game has real time feedback for users which allows them to understand if their guess is right, wrong or invalid.</li>
-    <li> The option to personalise the game by entering your name.</li>
+    <li>Have a clear understanding of the layout of the site -> clear navigation.</li>
+    <li>The blog has to be formal and factual, information on the site has to be easily accessibile to the user.</li>
+    <li>The option of customizing the blog posts by the owner has to be limited ot the authorisation. A random user of the blog can not have permition to comment or post on the blog.</li>
+    <li> As the topics discussed on the site contain sensitive information,I want the admin to be able to choose what comments get posted or not.
 </ul>
 
 ### User Stories
 
 ### First time and Recurring Stories
 <ol>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
+    <li>As a user of the site, I want to be able to Browse through content on the website.</li>
+    <li>As a user of the site, I want to be able to View court listings on a calendar.</li>
+    <li>As a user of the site, I want to be able to View Court News Stories.</li>
+    <li>As a user of the site, I want to be able to View Court News Stories in a List.</li>
+    <li>As a user of the site, I want to be able to open and read the court news stories.</li>
+    <li>As a user of the site, I want to be able to View comments under each post.</li>
+    <li>As an authorized user of the site, I want to be able to Post Comments. </li>
+    <li>As a user of the site, I want to be able to Register for an account.</li>
 </ol>
 
 ### Site's Owner Stories
 <ol>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
-    <li>-</li>
+    <li>As an authorized owner of the site, I want to be able to Post Stories to the site.</li>
+    <li>As an authorized owner of the site, I want to be able to Create story drafts to come back to.</li>
+    <li>As an authorized owner of the site, I want to be able to Manage site content.</li>
+    <li>As an authorized owner of the site, I want to be able to Manage comments under posts.</li>
 </ol>
 
 ## Technical Design
@@ -77,7 +80,7 @@
 ### Flow Chart
 <p> I used the flow chart to design a clear map of my site that would help me design the functionality of the site and the logic and guidence for user stories. I did this by using Lucid Chart</p>
 <details><summary>Flow Chart</summary>
-        <img src=""></details>
+        <img src="docs/flowchart/flowchart.jpeg"></details>
 <hr>
 
 ### Database Diagram
