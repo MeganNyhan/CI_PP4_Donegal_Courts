@@ -17,7 +17,7 @@
     <!-- Code Institute Code -->
     <div>
         <!-- The featured image URL goes in the src attribute -->
-        <img src=" {{ post.featured_image.url }}" width="100%" height="200px">
+        <img src="{{ post.featured_image.url }}" width="100%" height="200px">
     </div>
     <br/><br/>
     {{ post.body|safe }}
@@ -26,6 +26,7 @@
 
     <br/>
     <br/>
+    <!-- Comments Section 
     <h2> Comments...</h2>
     {% if not post.comments.all %}
         There are no comments yet. <a href="#">Add One</a>
@@ -40,5 +41,5 @@
             <br/><br/>
         {% endfor %}
     {% endif %}
-
+    -->
 {% endblock %}
