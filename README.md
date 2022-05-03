@@ -84,9 +84,16 @@
 <hr>
 
 ### Database Diagram
-<p> ---</p>
-<p> ---</p>
-<p>---</p>
+<p> My Database has three models:
+<ul>
+<li> Post </li>
+<li> Comment </li>
+<li> ---- </li>
+</ul></p>
+<p> Post and Comment have a many to one relationship and also uses the imported User class model for username and user unigue passwords.</p>
+<details><summary>Database Diagram</summary>
+        <img src="docs/flowchart/flowchart.jpeg"></details>
+<br/>
 
 ### User Manual:
 <ol>
