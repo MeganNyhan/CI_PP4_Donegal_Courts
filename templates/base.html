@@ -62,32 +62,6 @@
         </div>
       </nav>
       <!-- End Boostrap Nav Bar-->
-    <div class="col-12 mt-3 left">
-      <div class="row">
-        {% for post in post_list %}
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <div class="image-container">
-                <img class="card-img-top" src="{{ post.featured_image.url }}">
-                <div class="image-flash">
-                  <p class="author"><strong>Author: {{ post.author }}</strong> | {{ post.post_date}}</p>
-                </div>
-              </div>
-              <hr/>
-              <a href="{% url 'home' %}" class="post-link">
-                <h2 class="card-title">{{ post.title }}</h2>
-              </a>
-            </div>
-          </div>
-        </div>
-        {% if forloop.counter|divisibleby:6 %}
-      </div>
-      <div class="row">
-        {% endif %}
-        {% endfor %}
-      </div>
-    </div>
     {% block content %}
     <!-- Extension of other html files -->
     {% endblock content %}

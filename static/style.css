@@ -36,8 +36,6 @@ body {
 }
 
 .image-flash {
-    position: absolute;
-    bottom: 5%;
     min-width: 30%;
     left: -2px;
     background-color: maroon;
@@ -45,8 +43,8 @@ body {
 
 .author {
     color: white;
-    margin: 4px;
     text-transform: uppercase;
+    margin-left: 10px;
 }
 
 .post-link {
@@ -59,7 +57,6 @@ body {
 }
 
 .post-title {
-    margin-top: 20%;
     margin-left: 5%;
 }
 
@@ -120,4 +117,9 @@ body {
 
 #contact{
     padding-left: 180px;
+}
+
+/* Blog post content */
+.button{
+    padding-left: 3%;
 }

@@ -3,6 +3,8 @@
 {% block title %} {{post.title_tag}} {% endblock %}
 
 {% block content %}
+<div class = "container" >
+    <div class="row">
     <h1> {{ post.title }}</h1>
     <small>
         {% if user.is_authenticated %}
@@ -14,19 +16,23 @@
         {% endif %}
     <small> By: {{ post.author.first_name }} - {{ post.post_date }}</small>
     <hr>
-    <!-- Code Institute Code -->
-    <div>
-        <!-- The featured image URL goes in the src attribute -->
-        <img src="{{ post.featured_image.url }}" width="100%" height="200px">
-    </div>
+        <!-- The featured image -->
+        <img src="{{ post.featured_image.url }}" width="700px" height="500px">
+
     <br/><br/>
     {{ post.body|safe }}
+    <br/><br/>
     <hr>
-    <a class="btn btn-dark" href="{% url 'home' %}">Back</a>
-
+    </div>
+</div>
+<div class="button">
+    <a class="btn btn-dark " href="{% url 'home' %}">Back</a>
+</div>
     <br/>
     <br/>
-    <!-- Comments Section 
+<div class = "container" >
+    <div class="row">
+    <!-- Comments Section -->
     <h2> Comments...</h2>
     {% if not post.comments.all %}
         There are no comments yet. <a href="#">Add One</a>
@@ -36,10 +42,13 @@
                 {{ comment.name }} | 
                 {{ comment.date_added }} 
             </strong>
-            <br/>
+            <br/> <br/>
             {{ comment.body }}
-            <br/><br/>
+            
         {% endfor %}
     {% endif %}
-    -->
+    <br/><br/>
+</div>
+</div>
 {% endblock %}
+
