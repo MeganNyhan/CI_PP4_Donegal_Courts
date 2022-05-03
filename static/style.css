@@ -1,12 +1,5 @@
 body {
-    background-color: black;
-}
-
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+    background-color: white;
 }
 
 .red-o {
@@ -50,15 +43,6 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
 }
 
 .post-link {
@@ -118,5 +102,5 @@ body {
 
 .card-title{
     text-decoration: none;
-    color: yellow;
+    color: black;
 }
