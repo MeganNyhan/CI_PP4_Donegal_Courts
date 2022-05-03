@@ -42,7 +42,7 @@
                   <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
                   <li><hr class="dropdown-divider"></li>
                  <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Profile</a></li>
-                </ul>-->
+                </ul>
               </li>
               {% else %}
               <li class="nav-item">
@@ -57,11 +57,7 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
                 </ul>
-              </li>
               {% endif %}
-                </ul>
-              </li>
-            </ul>
           </div>
         </div>
       </nav>
@@ -92,6 +88,9 @@
         {% endfor %}
       </div>
     </div>
+    {% block content %}
+    <!-- Extension of other html files -->
+    {% endblock content %}
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg" >
       <div class="container">

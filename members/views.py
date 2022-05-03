@@ -25,7 +25,7 @@ class UserRegisterView(generic.CreateView):
         Login function
     """
     form_class = SignUpForm
-    template_name = 'registration/registration.html'
+    template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
 
 
