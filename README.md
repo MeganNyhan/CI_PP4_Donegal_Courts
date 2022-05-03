@@ -58,7 +58,6 @@
 ### First time and Recurring Stories
 <ol>
     <li>As a user of the site, I want to be able to Browse through content on the website.</li>
-    <li>As a user of the site, I want to be able to View court listings on a calendar.</li>
     <li>As a user of the site, I want to be able to View Court News Stories.</li>
     <li>As a user of the site, I want to be able to View Court News Stories in a List.</li>
     <li>As a user of the site, I want to be able to open and read the court news stories.</li>
