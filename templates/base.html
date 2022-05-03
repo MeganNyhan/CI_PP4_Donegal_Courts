@@ -11,6 +11,8 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Title -->
     <title>{% block title %} Donegal Courts {% endblock %}</title>
     <!-- <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">-->
@@ -39,7 +41,7 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <!--<li><a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Profile</a></li>
+                 <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Profile</a></li>
                 </ul>-->
               </li>
               {% else %}
@@ -91,8 +93,25 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
-      <h1> to change </h1>
+    <footer class="footer mt-auto py-3 dark-bg" >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            Donegal Courts is run through partnership with the circut court in Ireland. All information displayed is public knowledge and meant for public information purposes.
+          </div>
+          <div class="col-sm" id="contact">
+            <h3>Contact:</h3>
+            <p> Contact us through Donegal Daily</p>
+          </div>
+          <div class="col-sm">
+            <ul>
+              <li class="nav-item">
+                <a class="footer-link" aria-current="page" href="{% url 'home' %}">Back to the Top <i class="fa-solid fa-arrow-up-long"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
   </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->

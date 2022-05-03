@@ -24,7 +24,11 @@ body {
 
 .card {
     border: none;
-    background-color: transparent;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 300px;
 }
 
 .image-container {
@@ -36,7 +40,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: maroon;
 }
 
 .author {
@@ -50,9 +54,8 @@ body {
     color: #445261;
 }
 
-.post-link:hover,
-.page-link {
-    color: #E84610;
+.post-link:hover{
+    color: grey;
 }
 
 .post-title {
@@ -83,7 +86,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: maroon;
     text-decoration: underline;
 }
 
@@ -103,4 +106,18 @@ body {
 .card-title{
     text-decoration: none;
     color: black;
+}
+
+.footer{
+    color: white;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+#contact{
+    padding-left: 180px;
 }
