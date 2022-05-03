@@ -60,7 +60,7 @@
               {% endif %}
           </div>
         </div>
-      </nav>
+</nav>
       <!-- End Boostrap Nav Bar-->
     {% block content %}
     <!-- Extension of other html files -->
@@ -69,17 +69,17 @@
     <footer class="footer mt-auto py-3 dark-bg" >
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-5">
             Donegal Courts is run through partnership with the circut court in Ireland. All information displayed is public knowledge and meant for public information purposes.
           </div>
-          <div class="col-sm" id="contact">
+          <div class="col" id="contact">
             <h3>Contact:</h3>
-            <p> Contact us through Donegal Daily</p>
+            <p> Contact us through Donegal Daily<br/>Email: info@donegaldaily.com<br/>Phone: 087 164 1160</p>
           </div>
-          <div class="col-sm">
+          <div class="col">
             <ul>
-              <li class="nav-item">
-                <a class="footer-link" aria-current="page" href="{% url 'home' %}">Back to the Top <i class="fa-solid fa-arrow-up-long"></i></a>
+              <li class="back-to-top">
+                <a class="footer-link" aria-current="page" href="{% url 'home' %}"> Back to the Top</a>
               </li>
             </ul>
           </div>

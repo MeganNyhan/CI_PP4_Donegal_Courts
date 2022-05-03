@@ -5,7 +5,7 @@
 {% block content %}
 <div class = "container" >
     <div class="row">
-    <h1> {{ post.title }}</h1>
+    <h1 class="post-title"> {{ post.title }}</h1>
     <small>
         {% if user.is_authenticated %}
             {% if user.id == post.author.id %}
@@ -14,13 +14,17 @@
                 <br/>
             {% endif %}
         {% endif %}
+        <br/>
     <small> By: {{ post.author.first_name }} - {{ post.post_date }}</small>
-    <hr>
+    <br/><br/>
         <!-- The featured image -->
         <img src="{{ post.featured_image.url }}" width="700px" height="500px">
+        <br/><br/>
 
     <br/><br/>
-    {{ post.body|safe }}
+    <div class="post-body">
+        {{ post.body|safe }}
+    </div>
     <br/><br/>
     <hr>
     </div>

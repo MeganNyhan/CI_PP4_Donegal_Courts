@@ -3,6 +3,8 @@
 {% block title %}Edit Blog Post{% endblock %}
 
 {% block content %}
+<div class = "container" >
+    <div class="row">
 {% if user.is_authenticated %}
     {% if user.id == post.author.id %}
         <br/><br/>
@@ -15,7 +17,9 @@
                {{ form.media }}
                {{ form.as_p }}
                <button class="btn btn-dark">Post Edit</button>
+               <br/><br/>
         </div>   
+        
     {% else %}
     <p> You are not allowed to edit a blog post.</p>
     {% endif %}
@@ -24,5 +28,7 @@
 <p> You are not allowed to edit a blog post.</p>
 
 {% endif %}
+</div>
+</div>
 
 {% endblock %}
