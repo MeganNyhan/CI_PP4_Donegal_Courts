@@ -146,3 +146,11 @@ body {
 #copyright{
     padding-top: 40px;
 }
+
+.comments{
+    padding-left: 20px;
+}
+
+.comment-body{
+    padding-left: 30px;
+}
