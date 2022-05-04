@@ -9,7 +9,7 @@
                 <h1>Create a New Court News Story</h1>
             <br/><br/>
             <div class="form-group">
-                <form method="POST">
+                <form method="POST" encrypt="">
             
                     {%csrf_token%}
                     {{ form.media }}

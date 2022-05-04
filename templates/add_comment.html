@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Comment on This Post{% endblock %}
+{% block content %}
+<br/><br/> 
+<div class="container">
+    <div class="row">
+        {% if user.is_authenticated %}
+            <br/><br/>
+                <h1>Create a New Court News Story</h1>
+            <br/><br/>
+            <div class="form-group">
+                <form method="POST">
+            
+                    {%csrf_token%}
+                    {{ form.as_p }}
+            
+                <button class="btn btn-dark">Add Comment</button>
+            </div>
+            {% else %}
+            <p> You're need an account to leave a comment, would you like to register? If you already have an account please sign in</p>
+            <div class="button">
+                <a class="btn btn-dark " href="{% url 'register' %}">Register</a>
+                <a class="btn btn-dark " href="{% url 'login' %}">Login</a>
+            </div>
+            
+        {% endif %}
+    </div>
+</div>
+<br/><br/> 
+{% endblock %}
