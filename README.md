@@ -21,6 +21,7 @@
     1. [Flow Chart](#flow-chart)
     2. [Database Diagram](#database-diagram)
     3. [User Manual](#user-manual)
+    4. [Wireframes](#wireframes)
 4. [Technology](#technology)
     1. [Develpoment Languages Used](#develpoment-languages-used)
     2. [Frameworks and Tools used](#frameworks-and-tools-used)
@@ -102,6 +103,37 @@
 <li> ----</li>
 <li> ----</li>
 </ol>
+
+### Wireframes:
+
+<details><summary>Home Page</summary>
+        <img src="docs/wireframes/home.png"></details>
+
+<details><summary>Home Page: Membership Option</summary>
+        <img src="docs/wireframes/home-member.png"></details>
+
+<details><summary>Login</summary>
+        <img src="docs/wireframes/login.png"></details>
+
+<details><summary>Register</summary>
+        <img src="docs/wireframes/register.png"></details>
+
+<details><summary>Home page: Loggined-In User</summary>
+        <img src="docs/wireframes/home-logged-in-user.png"></details>
+
+<details><summary>Blog Post</summary>
+        <img src="docs/wireframes/blog-post.png"></details>
+
+<details><summary>Blog Post: Edit</summary>
+            <img src="docs/wireframes/update-post.png"></details>
+
+<details><summary>Blog Post: Delete</summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+
+<details><summary>Blog Post: Create</summary>
+            <img src="docs/wireframes/create-post.png"></details>
+
+        
 
 ### Technology:
 

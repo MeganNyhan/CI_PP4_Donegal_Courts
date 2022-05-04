@@ -3,10 +3,11 @@
 {% block title %}Sign Up!{% endblock %}
 
 {% block content %}
-<div>
-    <br/>
+
+<div class="container">
+    <div class="row">
+    <br/><br/>
         <h1>Sign Up!</h1>
-            <br/>
                 <div class="form-group">
                     <form method="POST">
 
@@ -14,7 +15,9 @@
                     {{ form.as_p }}
 
                     <button class="btn btn-dark">Sign Up!</button>
+                    <br/><br/>
                 </div> 
             <br/>
 </div> 
+</div>
 {% endblock %}
