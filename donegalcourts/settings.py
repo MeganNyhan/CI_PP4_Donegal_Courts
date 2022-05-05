@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'blog',
     'members',
-    'ckeditor'
+    'ckeditor',
 ]
 
 SITE_ID = 1

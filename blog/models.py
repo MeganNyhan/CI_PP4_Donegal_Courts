@@ -58,3 +58,15 @@ class Comment(models.Model):
     def __str__(self):
         return '%s - %s' % (self.post.title, self.name)
 
+
+class Carousel(models.Model):
+    """
+        Carousel Model for profile page
+    """
+    image = CloudinaryField('image', default='placeholder', blank=False)
+    title = models.CharField(max_length=150, unique=True, blank=False)
+    sub_title = models.CharField(max_length=150, unique=True, blank=False)
+
+    def __str__(self):
+        return str(self.title)
+
