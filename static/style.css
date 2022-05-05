@@ -136,7 +136,7 @@ body {
 }
 
 .post-body{
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .post-title{
@@ -153,4 +153,10 @@ body {
 
 .comment-body{
     padding-left: 30px;
+}
+
+/*-- Profile Pic --*/
+.profile-pic > img{
+    width: 200px;
+    height:200px;
 }

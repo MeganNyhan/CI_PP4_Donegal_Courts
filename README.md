@@ -345,6 +345,9 @@
 <li></li>
 </ul>
 <p> I used these videos/ articles soley as a guide I did not copy and paste.</p>
+<ul><li> Photos :Photo by Tarzine Jackson from Pexels</li>
+
+<>
 <hr>
 
 ## Acknowledgements:
