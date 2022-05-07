@@ -55,6 +55,9 @@
                   <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
                 </ul>
               {% endif %}
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="{% url 'add-post' %}">Contact Us!</a>
+                </li>
           </div>
           <ul class="navbar-nav mr-auto">
             </li><p class="tag-line"> <i>A week in the Courts</i></p></li>
@@ -66,26 +69,47 @@
     <!-- Extension of other html files -->
     {% endblock content %}
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg" >
-      <div class="container">
+    <hr>
+    <footer class="bg-dark text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
         <div class="row">
-          <div id="copyright" class="col-5">
-            Donegal Courts is run through partnership with the circut court in Ireland. All information displayed is public knowledge and meant for public information purposes.
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-white">Footer text</h5>
+    
+            <p class="footer-text text-white">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
           </div>
-          <div class="col" id="contact">
-            <h3>Contact:</h3>
-            <p> Contact us through Donegal Daily<br/>Email: info@donegaldaily.com<br/>Phone: 087 164 1160</p>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase text-white">Footer text</h5>
+    
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
           </div>
-          <div class="col">
-            <ul>
-              <li class="back-to-top">
-                <a class="footer-link" aria-current="page" href="{% url 'home' %}"> Back to the Top</a>
-              </li>
-            </ul>
-          </div>
+          <!--Grid column-->
         </div>
+        <!--Grid row-->
       </div>
-  </footer>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
