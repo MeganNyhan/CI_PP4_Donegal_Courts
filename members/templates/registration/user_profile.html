@@ -21,19 +21,19 @@
                     </strong></h5>
                     <p class="small text-muted" id="user-links"> 
                         {% if page_user.website_url %}
-                            | <a href="{{ post.author.profile.website_url }}"> Website </a>
+                            | <a href="{{ post.author.profile.website_url }}" target="_blank"> Website </a>
                         {% endif %} 
                         {% if page_user.website_url %}
-                            | <a href="{{ post.author.profile.facebook_url }}">Facebook </a>  
+                            | <a href="{{ post.author.profile.facebook_url }}" target="_blank">Facebook </a>  
                         {% endif %} 
                         {% if page_user.website_url %}
-                            | <a href="{{ post.author.profile.twitter_url }}">Twitter </a>  
+                            | <a href="{{ post.author.profile.twitter_url }}" target="_blank">Twitter </a>  
                         {% endif %} 
                         {% if page_user.website_url %}
-                            | <a href="{{ post.author.profile.instagram_url }}">Instagram </a> 
+                            | <a href="{{ post.author.profile.instagram_url }}" target="_blank">Instagram </a> 
                         {% endif %}
                         {% if page_user.website_url %}
-                            | <a href="{{ post.author.profile.pinterest_url }}">Pinterest </a>
+                            | <a href="{{ post.author.profile.pinterest_url }}" target="_blank">Pinterest </a>
                         {% endif %}
                     </p>
                 <p class="card-text">{{ page_user.bio }}</p>

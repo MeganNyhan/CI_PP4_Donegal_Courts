@@ -45,21 +45,21 @@
                 <h5 class="card-title"><strong>{{ post.author.first_name }} {{ post.author.last_name }}
                 </strong></h5>
                 <p class="small text-muted" id="user-links"> 
-                    <a href="{% url 'show_profile_page' post.author.profile.id %}"> Author's Profile Page </a> 
+                    <a href="{% url 'show_profile_page' post.author.profile.id %}" target="_blank"> Author's Profile Page </a> 
                     {% if post.author.profile.website_url %}
-                        | <a href="{{ post.author.profile.website_url }}"> Website </a>
+                        | <a href="{{ post.author.profile.website_url }}" target="_blank"> Website </a>
                     {% endif %} 
                     {% if post.author.profile.website_url %}
-                       | <a href="{{ post.author.profile.facebook_url }}">Facebook </a>  
+                       | <a href="{{ post.author.profile.facebook_url }}" target="_blank">Facebook </a>  
                     {% endif %} 
                     {% if post.author.profile.website_url %}
-                        | <a href="{{ post.author.profile.twitter_url }}">Twitter </a>  
+                        | <a href="{{ post.author.profile.twitter_url }}" target="_blank">Twitter </a>  
                     {% endif %} 
                     {% if post.author.profile.website_url %}
-                        | <a href="{{ post.author.profile.instagram_url }}">Instagram </a> 
+                        | <a href="{{ post.author.profile.instagram_url }}" target="_blank">Instagram </a> 
                     {% endif %}
                     {% if post.author.profile.website_url %}
-                        | <a href="{{ post.author.profile.pinterest_url }}">Pinterest </a>
+                        | <a href="{{ post.author.profile.pinterest_url }}" target="_blank">Pinterest </a>
                     {% endif %}
                 </p>
               <p class="card-text">{{ post.author.profile.bio }}</p>
