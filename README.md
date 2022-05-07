@@ -19,7 +19,7 @@
     3. [User Stories](#user-stories)
 3. [Technical Design](#technical-design)
     1. [Flow Chart](#flow-chart)
-    2. [Database Diagram](#database-diagram)
+    2. [Database Diagram](#database)
     3. [User Manual](#user-manual)
     4. [Wireframes](#wireframes)
 4. [Technology](#technology)
@@ -83,9 +83,12 @@
         <img src="docs/flowchart/flowchart.jpeg"></details>
 <hr>
 
-### Database Diagram
+### Database 
 <p> My Database has three models:
+<p> My project uses the relational databse -> PostgreSQL.</p>
+<p> The data is handeled within the application with Django. </p>
 <ul>
+<li> Profile </li>
 <li> Post </li>
 <li> Comment </li>
 <li> ---- </li>
