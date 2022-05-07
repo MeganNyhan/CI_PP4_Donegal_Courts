@@ -100,6 +100,16 @@
 <li> It includes the following fields: user, bio, profile_pic, website_url, facebook_url, twitter_url, instagram_url, pinterest_url.</li>
 <li> It includes a One to One field which is apart of a command to delete history of a user if the user is deleted.</li>
 
+<p> Post: </p>
+<li> This post model will allow me to post onto the site, and create the required variables fields.</li>
+<li> It is used by several users to post blog post to the site, there for it uses a Foreign Key. </li>
+<li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
+
+<p> Comment: </p>
+<li> This comment model will allow users to post comments under the blog post.</li>
+<li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
+<li> It includes the following fields: post, name, body, date_added</li>
+
 <p> Post and Comment have a many to one relationship and also uses the imported User class model for username and user unigue passwords.</p>
 <details><summary>Database Diagram</summary>
         <img src="docs/flowchart/flowchart.jpeg"></details>
