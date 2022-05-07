@@ -92,7 +92,14 @@
 <li> Post </li>
 <li> Comment </li>
 <li> ---- </li>
-</ul></p>
+</ul>
+<ul>
+<p> Profile: </p>
+<li> The Profile model in my application creates the users profile.</li>
+<li> It is part of the django.db library. </li>
+<li> It includes the following fields: user, bio, profile_pic, website_url, facebook_url, twitter_url, instagram_url, pinterest_url.</li>
+<li> It includes a One to One field which is apart of a command to delete history of a user if the user is deleted.</li>
+
 <p> Post and Comment have a many to one relationship and also uses the imported User class model for username and user unigue passwords.</p>
 <details><summary>Database Diagram</summary>
         <img src="docs/flowchart/flowchart.jpeg"></details>
