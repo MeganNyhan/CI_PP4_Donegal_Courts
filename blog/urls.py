@@ -1,6 +1,6 @@
 # import views
 from django.urls import path
-from .views import HomeView, PostDetailView, AddPostView, UpdatePostView, DeletePostView, AddCommentView
+from .views import HomeView, PostDetailView, UpdatePostView, DeletePostView, AddCommentView
 from . import views
 
 
