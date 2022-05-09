@@ -7,7 +7,7 @@
     <div class="row">
     <h1 class="post-title"> {{ post.title }}</h1>
     <small>
-        {% if user.is_authenticated %}
+        {% if user.is_superuser %}
             {% if user.id == post.author.id %}
                 <a class="btn btn-warning"href="{% url 'update-post' post.pk %}"> Edit</a>
                 <a class="btn btn-danger"href="{% url 'delete-post' post.pk %}"> Delete</a></small>
@@ -18,7 +18,7 @@
     <small> By: {{ post.author.first_name }} - {{ post.post_date }}</small>
     <br/><br/>
         <!-- The featured image -->
-            <img src="{{ post.featured_image.url }}" width="700px" height="500px">
+            <img src="{{ post.featured_image.url }}">
         <br/><br/>
         <br>
     <!-- Post Body Goes Here -->
@@ -28,8 +28,8 @@
     <!-- Back Button Goes Here -->
         <div class="button">
             <a class="btn btn-dark " href="{% url 'home' %}">Back</a>
+            <br/><br/>
         </div>
-        <br/><br/>
         <hr>
     <br/>
 <!-- Bootstrap Card Horizontal -->
