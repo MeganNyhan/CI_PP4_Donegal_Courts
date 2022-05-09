@@ -9,13 +9,12 @@
     <h1 class="login-head">Login</h1>
     <br/><br/>
     <br/><br/>
-    <br/><br/>
+    <br/>
     <div class="form-group">
       <!-- Start of Login Form -->
         <form method="POST">
         {%csrf_token%}
             <div class="row mb-3">
-              <br/><br/>
               <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" name="username" placeholder="Username">
@@ -49,7 +48,7 @@
             <br/><br/>
               <p> Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
             <br/><br/><br/>
-            <br/><br/>
+            <br/><br/><br/>
     </div>    
   </div>
 </div>
