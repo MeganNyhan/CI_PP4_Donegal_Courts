@@ -217,3 +217,12 @@ body {
 #send > .btn {
     padding-top: 10px;
 }
+
+.login-head > h1{
+    padding-top:10px;
+}
+
+.landscape{
+    height: 500px;
+    width: 100%;
+}
