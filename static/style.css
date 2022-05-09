@@ -226,3 +226,8 @@ body {
     height: 500px;
     width: 100%;
 }
+
+.intro{
+    padding-top:50px;
+    padding-bottom:40px;
+}
