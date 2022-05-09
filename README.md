@@ -7,7 +7,7 @@
 <ul>
     <li> The main goal of this project is to create a platform for locals of Donegal to have a place to read and stay informed about the goings on.</li>
     <li>It also aims to create a place for locals to have a public platform (through a comments section) about the stories that have come out of the recent court hearings.</li>
-    <li> Finally, the blog will be fully functional from an admin point of view where the admin can manage posts and comments that will be display on the site. They are also responisble for adding content to the site, so any posts that are written need to be editable.</li>
+    <li> Finally, the blog will be fully functional from an admin point of view where the admin can manage posts that will be display on the site. They are also responisble for adding content to the site, so any posts that are written need to be editable. they can also choose once comments are posted by users that if the comment is abusive or harmfile thay can be deleted.</li>
 </ul>
 <hr>
 
