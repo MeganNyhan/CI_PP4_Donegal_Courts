@@ -126,8 +126,8 @@ body {
     padding-left: 150px;
 }
 
-#contact{
-    padding-left: 100px;
+#contact > h1{
+    padding-top: 10px;
 }
 
 .back-to-top > a{
@@ -212,4 +212,8 @@ body {
     background:none;
     height:500px;
     width:600px;
+}
+
+#send > .btn {
+    padding-top: 10px;
 }

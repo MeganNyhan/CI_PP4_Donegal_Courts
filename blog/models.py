@@ -7,6 +7,8 @@ from django.urls import reverse
 from datetime import datetime, date
 from ckeditor.fields import RichTextField
 from cloudinary.models import CloudinaryField
+from django.core.validators import validate_slug, validate_email
+from django import forms
 
 # This tuple will keep track of drafted posts and published posts
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -69,3 +71,4 @@ class Carousel(models.Model):
 
     def __str__(self):
         return str(self.title)
+

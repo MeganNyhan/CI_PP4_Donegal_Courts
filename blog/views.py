@@ -1,8 +1,8 @@
 # imports
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
 from .models import Post, Comment
-from .forms import PostForm, EditForm, CommentForm
+from .forms import PostForm, EditForm, CommentForm, ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.core.mail import send_mail
 from django.http import HttpResponse
@@ -65,3 +65,9 @@ class AddCommentView(CreateView):
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
         return super().form_valid(form)
+
+
+class ContactFormView(FormView):
+    form_class = ContactForm
+    template_name = 'contact.html'
+    success_url = '/'
