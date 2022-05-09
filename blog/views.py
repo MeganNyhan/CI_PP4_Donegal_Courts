@@ -38,15 +38,6 @@ class PostDetailView(DetailView):
     template_name = 'post_detail.html'
 
 
-class AddPostView(CreateView):
-    """
-        Create Add post view for creating blog posts on the site
-    """
-    model = Post
-    form_class = PostForm
-    template_name = 'add_post.html'
-
-
 class UpdatePostView(UpdateView):
     """
         Edite post view for editing/updating blog posts on the site
