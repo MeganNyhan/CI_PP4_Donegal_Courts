@@ -1,12 +1,24 @@
 # imports
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
 from .forms import PostForm, EditForm, CommentForm, ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.core.mail import send_mail
 from django.http import HttpResponse
 from django.urls import reverse_lazy
+
+
+def contact(request):
+    if request.method == "POST":
+            name = request.POST['name']
+            surname = request.POST['surname']
+            email = request.POST['email']
+            subject = request.POST['subject']
+            message = request.POST['message']
+            return render(request,'contact.html',{'name': name})
+    else:
+        return render(request, 'contact.html', {})
 
 
 class HomeView(ListView):
@@ -67,7 +79,3 @@ class AddCommentView(CreateView):
         return super().form_valid(form)
 
 
-class ContactFormView(FormView):
-    form_class = ContactForm
-    template_name = 'contact.html'
-    success_url = '/'

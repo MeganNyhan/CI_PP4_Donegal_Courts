@@ -28,27 +28,28 @@
             <div class="col-lg-12 col-md-6 mb-4">
               <div class="icon mb-4"><i class="pe-7s-pen"></i></div>
               <h5 class="lined mb-4">Contact form</h5>
-              <form id="contact-form" method="post" action="contact.php" class="contact-form form">
+              <form id="contact-form" method="post" action="{% url 'contact' %}" class="contact-form form">
+                {% csrf_token %}
                 <div class="row">
                   <div class="form-group col-lg-6">
                     <label for="name" class="font-weight-normal">Firstname</label>
-                    <input id="name" type="text" name="name" class="form-control">
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Your First Name">
                   </div>
                   <div class="form-group col-lg-6">
                     <label for="surname" class="font-weight-normal">Lastname </label>
-                    <input id="surname" type="text" name="surname" class="form-control">
+                    <input id="surname" type="text" name="surname" class="form-control" placeholder="Your Last Name">
                   </div>
                   <div class="form-group col-lg-6">
                     <label for="email" class="font-weight-normal">Email</label>
-                    <input id="email" type="email" name="email" class="form-control">
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Your Email">
                   </div>
                   <div class="form-group col-lg-6">
                     <label for="subject" class="font-weight-normal">Subject</label>
-                    <input id="subject" type="text" name="subject" class="form-control">
+                    <input id="subject" type="text" name="subject" class="form-control" placeholder="Your Subject Matter">
                   </div>
                   <div class="form-group col-lg-12">
                     <label for="message" class="font-weight-normal">Message</label>
-                    <textarea id="message" rows="4" name="message" class="form-control"></textarea>
+                    <textarea id="message" rows="4" name="message" class="form-control" placeholder="Your Message"></textarea>
                   </div>
                   <div id="send" class="form-group col-lg-12">
                     <br/><br/>
