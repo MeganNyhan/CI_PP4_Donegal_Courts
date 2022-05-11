@@ -43,30 +43,37 @@
   <p class="text-center text-white"> Read the latest stories below    <i class="fa-solid fa-arrow-down"></i></i></p>
 </div>
 </div>
-<div class="col-12 mt-3 left">
-       <div class="row">
-         {% for post in post_list %}
-         <div class="col-md-4">
-           <div class="card mb-4">
-             <div class="card-body">
-               <div class="image-container">
-                 <img class="card-img-top" src="{{ post.featured_image.url }}">
-                 <div class="image-flash">
-                   <p class="author"><strong>Author: {{ post.author }}</strong> | {{ post.post_date}}</p>
-                 </div>
-                 <hr/>
-                 <a href="{% url 'post-detail' post.pk %}" class="post-link">
-                 <h2 class="card-title">{{ post.title }}</h2>
-               </a>
-               </div>
-             </div>
-           </div>
-         </div>
-         {% if forloop.counter|divisibleby:6 %}
-       </div>
-       <div class="row">
-         {% endif %}
-         {% endfor %}
-       </div>
-     </div>
+<br/>
+<div class="container">
+  <div class="row">
+         {% for post in post_list %} 
+<!-- New Idea for Boostrap Card -->
+    <br/>
+     <div class="card mb-3" style="max-width: 100%;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{{ post.featured_image.url }}" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <br/><br/>
+            <a href="{% url 'post-detail' post.pk %}" class="post-link">
+            <h5 class="card-title">{{ post.title }}</h5></a>
+            <p class="card-text">{{post.snippet}}</p>
+            <p class="card-text"><small class="text-muted"><strong>{{ post.author }}</strong> | {{ post.post_date}}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  {% if forloop.counter|divisibleby:6 %}
+</div>
+<div class="row">
+  {% endif %}
+  {% endfor %}
+</div>
+</div>
+</div>
+</div>
+     <!-- End Idea for Boostrap Card -->
 {% endblock %}
