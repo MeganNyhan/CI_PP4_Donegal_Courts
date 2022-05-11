@@ -47,12 +47,12 @@
           <img src="{{ post.featured_image.url }}" class="card-img" alt="...">
         </div>
         <div class="col-md-8">
-          <div class="card-body">
+          <div class="card-body bg-white">
             <br/><br/>
             <a href="{% url 'post-detail' post.pk %}" class="post-link">
-            <h5 class="card-title">{{ post.title }}</h5></a>
-            <p class="card-text">{{post.snippet}}</p>
-            <p class="card-text"><small class="text-muted"><strong>{{ post.author }}</strong> | {{ post.post_date}}</small></p>
+            <h5 class="card-title"><strong>{{ post.title }}</strong></h5>
+            <p class="card-text text-black">{{post.snippet}}</p></a>
+            <p class="card-text text-black"><small><strong>{{ post.author }}</strong> | {{ post.post_date}}</small></p>
           </div>
         </div>
       </div>

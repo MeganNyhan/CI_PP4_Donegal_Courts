@@ -10,14 +10,18 @@ from django.urls import reverse_lazy
 
 
 def contact(request):
+    """
+        Create view for contact page
+    """
     if request.method == "POST":
-            name = request.POST['name']
-            surname = request.POST['surname']
-            email = request.POST['email']
-            subject = request.POST['subject']
-            message = request.POST['message']
-            return render(request,'contact.html',{'name': name})
-    else:
+        name = request.POST['name']
+        surname = request.POST['surname']
+        email = request.POST['email']
+        subject = request.POST['subject']
+        message = request.POST['message']
+
+        return render(request, 'contact.html', {'name':name})
+    else: 
         return render(request, 'contact.html', {})
 
 
