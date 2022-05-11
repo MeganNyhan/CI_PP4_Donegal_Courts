@@ -194,21 +194,6 @@ body {
     color: white;
 }
 
-/** Google maps **/
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:500px;
-    width:600px;
-}
-
-.gmap_canvas {
-    overflow:hidden;
-    background:none;
-    height:500px;
-    width:600px;
-}
-
 #send > .btn {
     padding-top: 10px;
 }
@@ -217,14 +202,22 @@ body {
     padding-top:10px;
 }
 
+.carousel-inner{
+    height: 600px;
+}
+
 .landscape{
-    height: 500px;
+    height: 700px;
     width: 100%;
 }
 
 .intro{
-    padding-top:50px;
-    padding-bottom:40px;
+    padding-top:20px;
+    padding-bottom: 15px;
+}
+
+.intro > p{
+    font-size: large;
 }
 
 .carousel-item-active > img{

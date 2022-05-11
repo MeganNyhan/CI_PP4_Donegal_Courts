@@ -20,8 +20,14 @@ def contact(request):
         subject = request.POST['subject']
         message = request.POST['message']
 
-        return render(request, 'contact.html', {'name':name})
-    else: 
+        send_mail(
+            name,
+            message,
+            email,
+            ['donegalcourts12@gmail.com']
+            )
+        return render(request, 'contact.html', {'name': name})
+    else:
         return render(request, 'contact.html', {})
 
 
