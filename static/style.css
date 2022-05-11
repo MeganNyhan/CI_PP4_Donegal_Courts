@@ -240,3 +240,8 @@ body {
     height: 50px;
     width:100%;
 }
+
+#user-body{
+    padding-bottom: 20px;
+    background-color: white;
+}
