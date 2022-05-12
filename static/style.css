@@ -211,13 +211,9 @@ body {
     width: 100%;
 }
 
-.intro{
-    padding-top:20px;
-    padding-bottom: 15px;
-}
-
 .intro > p{
     font-size: large;
+    padding: 4%;
 }
 
 .carousel-item-active > img{
