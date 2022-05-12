@@ -1,12 +1,12 @@
 # imports
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
 from .forms import PostForm, EditForm, CommentForm, ContactForm
 from django.core.mail import send_mail, BadHeaderError
-from django.core.mail import send_mail
-from django.http import HttpResponse
-from django.urls import reverse_lazy
+from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy, reverse
+from django import forms
 
 
 def contact(request):
@@ -30,6 +30,13 @@ def contact(request):
     else:
         return render(request, 'contact.html', {})
 
+    def clean_email(self, *args, **kwargs):  # Form Validation
+        email = self.cleaned_data.get("email")
+        if "@" in email:
+            return email
+        else: 
+            raise forms.ValidationError("This is not a valid Email")
+
 
 class HomeView(ListView):
     """
@@ -38,6 +45,7 @@ class HomeView(ListView):
     model = Post
     template_name = 'home.html'
     ordering = ['post_date']
+    paginate_by = 6
 
 
 class PostDetailView(DetailView):
@@ -46,6 +54,14 @@ class PostDetailView(DetailView):
     """
     model = Post
     template_name = 'post_detail.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(PostDetailView, self).get_context_data()
+
+        stuff = get_object_or_404(Post, id=self.kwargs['pk'])
+        total_likes = stuff.total_likes()
+        context["total_likes"] = total_likes
+        return context
 
 
 class UpdatePostView(UpdateView):
@@ -79,4 +95,10 @@ class AddCommentView(CreateView):
         form.instance.post_id = self.kwargs['pk']
         return super().form_valid(form)
 
+
+def LikeView(request, pk):
+    post = get_object_or_404(Post, id=request.POST.get('post_id'))
+    post.likes.add(request.user)
+
+    return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
 

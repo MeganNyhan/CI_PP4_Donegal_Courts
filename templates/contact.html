@@ -4,20 +4,16 @@
 <!-- Boostrapious Contact Page Code (link in readme )-->
 <div class ="container">
   {% if name %}
-              <br/>
-              <br/><br/>
-              <br/><br/> 
-              <br/><br/>
+            <div id="thanks">
               <h4 class="text-center"> <strong>Thanks {{name}}!</strong>  We have recieved your email and will get back to you shortly</h4>
               <br/>
               <div class="col-md-12 text-center">
                 <a class="btn text-center btn-dark" href="{% url 'home' %}"> Return to the home page</a>
               </div>
-              <br/><br/>
-              <br/><br/>
-              <br/><br/> 
+            </div>
    {%else%}
        <!-- Start Contract Form -->
+       <br/><br/>
   <h1 class="contact">Contact</h1>
   <div class="row">
         <p class="lead my-4"><strong>We are happy to take Feedback and Thoughts/Opinions onboard. Contact us Today!</strong></p>
@@ -84,4 +80,17 @@
 <!-- End of Boptstrapious Code-->
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- JQuery Form Validation-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <script src="https://malsup.github.io/jquery.form.js"></script> 
+ 
+    <script> 
+        // wait for the DOM to be loaded 
+        $(document).ready(function() { 
+            // bind 'myForm' and provide a simple callback function 
+            $('#contact-form').ajaxForm(function() { 
+                alert("Thank you for your email!"); 
+            }); 
+        }); 
+    </script> 
 {% endblock %}

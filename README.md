@@ -23,8 +23,7 @@
     3. [User Manual](#user-manual)
     4. [Wireframes](#wireframes)
 4. [Technology](#technology)
-    1. [Develpoment Languages Used](#develpoment-languages-used)
-    2. [Frameworks and Tools used](#frameworks-and-tools-used)
+    1. [Develpoment Languages Used & 3rd Party Libraries:](#develpoment-languages-used)
 5. [Features](#features)
 6. [Testing](#testing)
     1. [Python Validation](#python-validation)
@@ -91,7 +90,7 @@
 <li> Profile </li>
 <li> Post </li>
 <li> Comment </li>
-<li> ---- </li>
+<li> Carousel </li>
 </ul>
 <ul>
 <p> Profile: </p>
@@ -108,11 +107,17 @@
 <p> Comment: </p>
 <li> This comment model will allow users to post comments under the blog post.</li>
 <li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
-<li> It includes the following fields: post, name, body, date_added</li>
+<li> It includes the following fields: post, name, body, date_added.</li>
 
-<p> Post and Comment have a many to one relationship and also uses the imported User class model for username and user unigue passwords.</p>
+<p> Carousel: </p>
+<li> This carousel model was to create a Carousel on the site that could be edited by the admin in the admin section.</li>
+<li> It is used by the Admin to post images to sections where this model is used. </li>
+<li> It includes the following fields: image, title and sub-title.</li>
+
+<p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue passwords.</p>
+<p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
 <details><summary>Database Diagram</summary>
-        <img src="docs/flowchart/flowchart.jpeg"></details>
+        <img src="docs/database-diagram"></details>
 <br/>
 
 ### User Manual:
@@ -163,19 +168,17 @@
 <li> Python </li>
 </ul>
 
-###  Frameworks and Tools used
+###  Frameworks and Tools used & 3rd Party Libraries:
 <ul>
 <li> Git, GitHUb, and GitPod </li>
 <li> Lucid Chart </li>
+<li> Balsamiq - Wireframes </li>
+<li> quickdatabasedesign.com </li>
 <li> Heroku </li>
 <li> Django </li>
-<li> BootStap </li>
-</ul>
-
-### 3rd Party Libraries:
-<ul>
-<li>------</li>
-<li>------</li>
+<li> BootStap 5 </li>
+<li> AJAX form Validation </li>
+<li> JavaScript </li>
 </ul>
 <hr>
 

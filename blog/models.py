@@ -43,6 +43,13 @@ class Post(models.Model):
     category = models.CharField(max_length=255, null=True)
     body = RichTextField(blank=True, null=True)
     post_date = models.DateField(auto_now_add=True)
+    likes = models.ManyToManyField(User, related_name='blog_posts')
+
+    def total_likes(self):
+        return self.likes.count()
+
+    class Meta:
+        ordering = ['post_date']
 
     def __str__(self):
         return str(self.title)
@@ -52,6 +59,10 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """
+    This comment model will allow me to post a comment under the
+    posts.
+    """
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     body = models.TextField()
@@ -63,7 +74,7 @@ class Comment(models.Model):
 
 class Carousel(models.Model):
     """
-        Carousel Model for profile page
+        Carousel Model for images
     """
     image = CloudinaryField('image', default='placeholder', blank=False)
     title = models.CharField(max_length=150, unique=True, blank=False)

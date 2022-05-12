@@ -1,6 +1,7 @@
 {% extends 'base.html'%}
 
 {% block title %} {{post.title_tag}} {% endblock %}
+{% load static %}
 
 {% block content %}
 <div class = "container" >
@@ -28,8 +29,18 @@
         <div class="button">
             <a class="btn btn-dark " href="{% url 'home' %}">Back</a>
             <br/><br/>
+            <form action="{% url 'like_post' post.pk %}"
+            method="POST">
+            {% csrf_token %}
+            <button type="submit", name="post_id", value="{{ post.id }}", class="btn btn-danger btn-md float-left">
+                 Like  <i class="fa-solid fa-thumbs-up"></i></button> - {{ total_likes }}
+                 Likes
+            </form>
+            <br/><br/>
+            <hr>
+            <br/>   
         </div>
-        <hr>
+    </div>
 <!-- Bootstrap Card Horizontal -->
     <div class="card mb-3">
         <div class="row g-0">

@@ -49,7 +49,7 @@
           <div class="card-body bg-white">
             <br/><br/>
             <a href="{% url 'post-detail' post.pk %}" class="post-link">
-            <h5 class="card-title"><strong>{{ post.title }}</strong></h5>
+            <h1 class="card-title"><strong>{{ post.title }}</strong></h1>
             <p class="card-text text-black">{{post.snippet}}</p></a>
             <p class="card-text text-black"><small><strong>{{ post.author }}</strong> | {{ post.post_date}}</small></p>
           </div>
@@ -57,11 +57,7 @@
       </div>
     </div>
     <hr>
-  {% if forloop.counter|divisibleby:6 %}
-</div>
-<div class="row">
-  {% endif %}
-  {% endfor %}
+    {% endfor %}
 </div>
 </div>
 </div>
