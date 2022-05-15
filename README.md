@@ -135,7 +135,7 @@
         <img src="docs/wireframes/home.png"></details>
 
 <details><summary>Home Page: Membership Option</summary>
-        <img src="docs/wireframes/home-member.png"></details>
+        <img src="docs/wireframes/home-members.png"></details>
 
 <details><summary>Login</summary>
         <img src="docs/wireframes/login.png"></details>
@@ -144,19 +144,28 @@
         <img src="docs/wireframes/register.png"></details>
 
 <details><summary>Home page: Loggined-In User</summary>
-        <img src="docs/wireframes/home-logged-in-user.png"></details>
+        <img src="docs/wireframes/home-logged-in.png"></details>
 
 <details><summary>Blog Post</summary>
-        <img src="docs/wireframes/blog-post.png"></details>
+        <img src="docs/wireframes/posts.png"></details>
 
-<details><summary>Blog Post: Edit</summary>
-            <img src="docs/wireframes/update-post.png"></details>
+<details><summary>Comments</summary>
+        <img src="docs/wireframes/comment.png"></details>
+
+<details><summary>Blog Post: Edit (Only admin View)</summary>
+            <img src="docs/wireframes/edit-post.png"></details>
+
+<details><summary>Blog Post: Delete (Only admin View)</summary>
+            <img src="docs/wireframes/delete-post.png"></details>
 
 <details><summary>Blog Post: Delete</summary>
             <img src="docs/wireframes/delete-post.png"></details>
 
-<details><summary>Blog Post: Create</summary>
-            <img src="docs/wireframes/create-post.png"></details>
+<details><summary>User Profile</summary>
+            <img src="docs/wireframes/user-profile.png"></details>
+
+<details><summary>Contact Page</summary>
+            <img src="docs/wireframes/contact-page.png"></details>
 
         
 
