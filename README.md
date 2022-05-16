@@ -117,7 +117,7 @@
 <p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue passwords.</p>
 <p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
 <details><summary>Database Diagram</summary>
-        <img src="docs/database-diagram"></details>
+        <img src="docs/database-diagram/diagram.png"></details>
 <br/>
 
 ### User Manual:
@@ -129,7 +129,10 @@
 <li> ----</li>
 </ol>
 
+<hr>
+
 ### Wireframes:
+
 
 <details><summary>Home Page</summary>
         <img src="docs/wireframes/home.png"></details>
@@ -158,9 +161,6 @@
 <details><summary>Blog Post: Delete (Only admin View)</summary>
             <img src="docs/wireframes/delete-post.png"></details>
 
-<details><summary>Blog Post: Delete</summary>
-            <img src="docs/wireframes/delete-post.png"></details>
-
 <details><summary>User Profile</summary>
             <img src="docs/wireframes/user-profile.png"></details>
 
@@ -168,6 +168,7 @@
             <img src="docs/wireframes/contact-page.png"></details>
 
         
+<hr>
 
 ### Technology:
 

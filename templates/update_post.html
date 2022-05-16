@@ -3,33 +3,38 @@
 {% block title %}Edit Blog Post{% endblock %}
 
 {% block content %}
-<div class = "container" >
+<div class = "container">
     <div class="row">
-{% if user.is_authenticated %}
-    {% if user.id == post.author.id %}
-        <br/><br/>
-        <h1>Update this Blog Post</h1>
-        <br/><br/>
+        {% if user.is_authenticated %}
+            {% if user.id == post.author.id %}
 
-        <div class="form-group">
-            <form method="POST">
-               {%csrf_token%}
-               {{ form.media }}
-               {{ form.as_p }}
-               <button class="btn btn-dark">Post Edit</button>
-               <br/><br/>
-               </form>
-        </div>   
-        
-    {% else %}
-    <p> You are not allowed to edit a blog post.</p>
-    {% endif %}
-{% else %}
+                <div class="form-group">
+                    <form method="POST">
+                        <br/><br/>
+                            <h1>Update this Blog Post</h1>
+                       {%csrf_token%}
+                       {{ form.media }}
+                       {{ form.as_p }}
+                       <button class="btn btn-dark">Post Edit</button>
+                        {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                            <li{% if messages.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                       <br/><br/>
+                       </form>
+                </div>   
 
-<p> You are not allowed to edit a blog post.</p>
+            {% else %}
+            <p> You are not allowed to edit a blog post.</p>
+            {% endif %}
+        {% else %}
+            <p> You are not allowed to edit a blog post.</p>
 
-{% endif %}
-</div>
+        {% endif %}
+    </div>
 </div>
 
 {% endblock %}

@@ -1,12 +1,13 @@
 # imports
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render,redirect, get_object_or_404 
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
 from .forms import PostForm, EditForm, CommentForm, ContactForm
 from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpRequest
 from django.urls import reverse_lazy, reverse
 from django import forms
+from django.contrib import messages
 
 
 def contact(request):
@@ -71,6 +72,7 @@ class UpdatePostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
+    # Success Message
 
 
 class DeletePostView(DeleteView):
