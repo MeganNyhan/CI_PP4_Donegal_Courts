@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'blog',
+    'contact',
     'members',
     'ckeditor',
 ]
@@ -170,9 +171,11 @@ DEFUALT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email Settings
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_EMAIL = 'donegalcourts12@gmail.com'
+EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'env(‘EMAIL_HOST_USER’)'
-EMAIL_HOST_PASSWORD = 'env(‘EMAIL_HOST_PASSWORD’)'
-EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'donegalcourts12@gmail.com'
+EMAIL_HOST_PASSWORD = 'Donegal12'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+

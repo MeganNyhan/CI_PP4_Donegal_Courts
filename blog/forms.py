@@ -48,17 +48,3 @@ class CommentForm(forms.ModelForm):
             'body': forms.Textarea(attrs={'class': 'form-control'})
         }
 
-
-class ContactForm(forms.Form):
-    """
-    This is Contact Form 
-    This uses a Field level Validation
-    """
-    name = forms.CharField()
-    email = forms.EmailField()
-    message = forms.CharField(widget=forms.Textarea())
-
-    def clean_email(self):  # Returns clean data
-        email_passed = self.cleaned_data.get("email")
-
-        return email_passed

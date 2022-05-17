@@ -2,31 +2,12 @@
 from django.shortcuts import render,redirect, get_object_or_404 
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
-from .forms import PostForm, EditForm, CommentForm, ContactForm
+from .forms import PostForm, EditForm, CommentForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponseRedirect, HttpRequest
 from django.urls import reverse_lazy, reverse
 from django import forms
 from django.contrib import messages
-
-
-def contact(request):
-    """
-        Create view for contact page
-    """
-    if request.method == "POST":
-        name = request.POST['name']
-        surname = request.POST['surname']
-        email = request.POST['email']
-        subject = request.POST['subject']
-        message = request.POST['message']
-        form = ContactForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-        messages.success(request, ('Your message has been sent successfully!'))
-        return render(request, 'contact.html')
-    else: 
-        return render(request, 'contact.html')
 
 
 class HomeView(ListView):
