@@ -43,11 +43,11 @@
                 <div class="row">
                   <div class="form-group col-lg-6">
                     <label for="name" class="font-weight-normal">Firstname</label>
-                    <input id="name" type="text" name="name" class="form-control" placeholder="Your First Name">
+                    <input id="name" type="text" name="first_name" class="form-control" placeholder="Your First Name">
                   </div>
                   <div class="form-group col-lg-6">
                     <label for="surname" class="font-weight-normal">Lastname </label>
-                    <input id="surname" type="text" name="surname" class="form-control" placeholder="Your Last Name">
+                    <input id="surname" type="text" name="last_name" class="form-control" placeholder="Your Last Name">
                   </div>
                   <div class="form-group col-lg-6">
                     <label for="email" class="font-weight-normal">Email</label>
@@ -63,7 +63,9 @@
                   </div>
                   <div id="send" class="form-group col-lg-12">
                     <br/><br/>
+                    <div class="form-actions">
                     <button type="submit" class="btn btn-dark"> <i class="far fa-envelope mr-2"> </i> Send message</button>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -83,14 +85,5 @@
     <!-- JQuery Form Validation-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
     <script src="https://malsup.github.io/jquery.form.js"></script> 
- 
-    <script> 
-        // wait for the DOM to be loaded 
-        $(document).ready(function() { 
-            // bind 'myForm' and provide a simple callback function 
-            $('#contact-form').ajaxForm(function() { 
-                alert("Thank you for your email!"); 
-            }); 
-        }); 
-    </script> 
+
 {% endblock %}

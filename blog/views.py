@@ -1,10 +1,10 @@
 # imports
-from django.shortcuts import render,redirect, get_object_or_404 
+from django.shortcuts import render, redirect, get_object_or_404 
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
-from .forms import PostForm, EditForm, CommentForm
+from .forms import PostForm, EditForm, CommentForm, ContactForm
 from django.core.mail import send_mail, BadHeaderError
-from django.http import HttpResponseRedirect, HttpRequest
+from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse_lazy, reverse
 from django import forms
 from django.contrib import messages
@@ -74,4 +74,28 @@ def LikeView(request, pk):
     post.likes.add(request.user)
 
     return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
+
+
+def contactView(request):
+    """
+        Create Contact us view
+    """
+    if request.method == 'GET':
+        form = ContactForm()
+    else:
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['donegalcourts12@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('success')
+    return render(request, "contact.html", {'form': form})
+
+
+def successView(request):
+    return HttpResponse('Success! Thank you for your email!')
 
