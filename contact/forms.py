@@ -1,4 +1,6 @@
+# imports
 from django import forms
+from .models import Contact
 
 
 class ContactForm(forms.Form):
@@ -6,7 +8,6 @@ class ContactForm(forms.Form):
     This is Contact Form
     This uses a Field level Validation
     """
-    name = forms.CharField(required=True)
-    email = forms.EmailField(required=True)
-    subject = forms.CharField(required=True)
-    message = forms.CharField(widget=forms.Textarea, required=True)
+    model = Contact
+    fields = ('first_name', 'last_name', 'contact_email',
+              'subject', 'message',)
