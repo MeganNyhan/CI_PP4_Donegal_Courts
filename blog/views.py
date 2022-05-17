@@ -20,23 +20,13 @@ def contact(request):
         email = request.POST['email']
         subject = request.POST['subject']
         message = request.POST['message']
-
-        send_mail(
-            name,
-            message,
-            email,
-            ['donegalcourts12@gmail.com']
-            )
-        return render(request, 'contact.html', {'name': name})
-    else:
-        return render(request, 'contact.html', {})
-
-    def clean_email(self, *args, **kwargs):  # Form Validation
-        email = self.cleaned_data.get("email")
-        if "@" in email:
-            return email
-        else: 
-            raise forms.ValidationError("This is not a valid Email")
+        form = ContactForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+        messages.success(request, ('Your message has been sent successfully!'))
+        return render(request, 'contact.html')
+    else: 
+        return render(request, 'contact.html')
 
 
 class HomeView(ListView):
