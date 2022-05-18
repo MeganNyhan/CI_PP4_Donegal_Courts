@@ -2,7 +2,7 @@
 from django.shortcuts import render, redirect, get_object_or_404 
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
-from .forms import PostForm, EditForm, CommentForm, ContactForm
+from .forms import EditForm, CommentForm, ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse_lazy, reverse
@@ -43,7 +43,18 @@ class UpdatePostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
-    # Success Message
+
+
+def UpdateMessage(request):
+    if request.method == "POST":
+        form = EditForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+        messages.success(request, ('Your post has been updated successfully.'))
+        return render(request, 'post_detail.html', {})
+   
+    else:
+        return render(request, 'update_post.html', {})
 
 
 class DeletePostView(DeleteView):
