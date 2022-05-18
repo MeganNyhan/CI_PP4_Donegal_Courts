@@ -388,49 +388,61 @@
 <hr>
 
 ## Deployment:
-<p>In order to deploy my site I took the following steps using GitHub pages and Heroku:</p>
 
-<ol>
-<li> Clone or Fork my repository.</li>
-<li> Create an account in the Heroku app, and within that create a new app.</li>
-<li> Add a "Config Var" with a key 'PORT' and value '8000' in Heroku's settings.</li>
-<li> Add buildbacks firstly for the python code, and then again for NodeJS.</li>
-<li> Then link the app to the repository using the following steps:</li>
-<ul>
-<li>Manually - Click to deploy branch </li><br>
-<p>or</p>
-<li>Enable automatic deploys and follow the prompted instructions.</li>
-</ul>
+### Deploying to Heroku
+
+<ol> 
+<li> Use pip3 freeze > requirements.txt in terminal to save libraries that need to be installed on Heroku as well.</li>
+<li> Create Procfile and add web: gunicorn blog.wsgi.</li>
+<li> Log in to Heroku.</li>
+<li> Click on the new button in the top right corner and in the drop down menu choose Create New App.</li>
+<li> Choose a name for your app and a region and then click Create App.</li>
+<li> Go to the resources tab and go to add-ons, search for postgres and ass heroku postgres.</li>
+<li> Go to the settings tab and go to Config Vars, click Reveal Config Vars and copy the DATABASE_URL_VALUE. Add DATABASE_URL and Value to the env.py in the code.</li>
+<li> Add SECRET_KEY and VALUE to Config Vars and add to the env.py in code.</li>
+<li> Add DATABSES in settings.py to fork with heroku database.</li>
+<li> Write python3 manage.py migrate in terminal.</li>
+<li> Add url in settings.py on ALLOWED_HOSTS.</li>
+<li> Go to the deploy tab and pick GitHub as deployment method.</li>
+<li> Search for a repository and connect to it.</li>
+<li> Click the button enable automatic deploys and the the button deploy branch.</li>
+<li> Wait for the app to build and then click th eview button.</li>
+
+### Forking a Repository
+
+<ol> 
+<li> Log into Github. </li>
+<li> Find the Repository you wish to fork.</li>
+<li> In the top right corner click the fork button. </li>
+<li> Now you will have a copy of the repository in your account! </li>
 </ol>
-<p> My link is: https://ci-pp3-hangman.herokuapp.com/ </p>
-<hr>
 
-<p> Forking the repository is done by the following steps:</p>
-<ol>
-<li>Within the GitHub repository, click "Fork" (a button) at the upper right hand corner.</li></ol>
-<hr>
-<p> Cloning the repository is done by the following steps:</p>
-<ol>
-<li>Within the GitHub repository, locate "Code" (a button) found at the top of the page.</li>
-<li> Once selected, select which you prefere out of the following choise: HTTPS, SSH or GitHub CLI and press the copy URL to your clipboard.</li>
-<li> Then open Git Bash.</li>
-<li> Change the current directory to your desired location for the cloned directory.</li>
-<li>Finally, type "git clone" and paste your URL.</li>
-<li>Once you press enter your local clone is created.</li></ol>
+### Cloning a Repository
+
+<ol> 
+<li> Log into Github. </li>
+<li> Find the Repository you wish to clone.</li>
+<li> Above the file window locate the green code button and click it. </li>
+<li> To clone the repository using https copy the link. </li>
+<li> Open Git Bash. </li>
+<li> Change the current directory to where you wnat the repository cloned. </li>
+<li> In your terminal type now type "Git Clone" followed by the repository you copied. </li>
+<li> Press Enter.</li>
+</ol>
 
 ## Credits:
 ### Source Code Used in Site
 
-<p> Due to limitations in my knowledge I used youtube tutorials/ stack overflow articles to guide me with creating the game:</p>
+<p> Due to limitations in my knowledge I used youtube tutorials/ stack overflow articles to guide me with creating the blog:</p>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li> Codemy: https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi </li>
+<li>Django Documentation: https://docs.djangoproject.com/en/4.0/topics/email/</li>
+<li> SitePoint: https://www.sitepoint.com/django-send-email/</li>
 </ul>
 <p> I used these videos/ articles soley as a guide I did not copy and paste.</p>
-<ul><li> Photos :Photo by Tarzine Jackson from Pexels</li>
-
-<>
+<ul>
+<li>Photo by Moose Photos: https://www.pexels.com/photo/woman-wearing-pink-collared-half-sleeved-top-1036623/</li>
+        - <li> </li>
 <hr>
 
 ## Acknowledgements:
