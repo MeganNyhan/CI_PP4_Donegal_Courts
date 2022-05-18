@@ -3,17 +3,16 @@ from .models import Contact
 
 
 # Create your views here.
-def contact(request):
+def contactForm(request):
     if request.method == "POST":
         contact = Contact()
-        first_name = request.POST.get('first_name')
-        last_name = request.POST.get('last_name')
+        name = request.POST.get('name')
         from_email = request.POST.get('from_email')
         message = request.POST.get('message')
 
-        contact.first_name = first_name
-        contact.last_name = last_name
+        contact.name = name
         contact.from_email = from_email
         contact.message = message
+        contact.save()
 
     return render(request, 'contact.html')

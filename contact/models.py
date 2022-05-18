@@ -9,8 +9,7 @@ class Contact(models.Model):
     """
         Contact Model for contact section of site
     """
-    first_name = models.CharField(max_length=200)
-    last_name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
     from_email = models.EmailField(max_length=200)
     subject = models.CharField(max_length=200)
     message = models.TextField(max_length=1000)
