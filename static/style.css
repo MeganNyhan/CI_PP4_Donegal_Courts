@@ -26,6 +26,26 @@ body {
     border: none;
 }
 
+.card-img-top{
+    height: 100%;
+    width: 100%;
+}
+
+/* -- Carosuel Sections ----*/
+.carousel-inner{
+    height: 600px;
+}
+
+.landscape{
+    height: 700px;
+    width: 100%;
+}
+
+.carousel-item-active > img{
+    opacity: 0.7;
+}
+
+/* Image for blog posts cards in home page */
 .image-container {
     position: relative;
 }
@@ -38,12 +58,14 @@ body {
     font-weight: 400;
 }
 
+/* Author for blog posts cards in home page */
 .author {
     color: white;
     text-transform: uppercase;
     margin-left: 10px;
 }
 
+/* Post Link for blog posts cards in home page */
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -53,12 +75,14 @@ body {
     color: grey;
 }
 
-
+/* Post Subtitle for blog posts cards in home page */
 .post-subtitle {
     margin-left: 5%;
     color: lightgray;
 }
 
+/* Sign-up Page */
+/* Sign-up Page Button */
 .btn-signup {
     background-color: #23BBBB;
     color: #fff;
@@ -101,7 +125,7 @@ body {
     font-weight: 400;
 }
 
-/* Footer */ 
+/*------- Footer --------*/ 
 .footer{
     color: white;
 }
@@ -113,25 +137,15 @@ body {
     height: 2.5rem; 
 }
 
-.back-to-top{
-    text-decoration: none;
-    color: white;
-    list-style: none;
-    padding-top:50px;
-    padding-left: 150px;
-}
-
 #contact > h1{
     padding-top: 10px;
 }
 
-.back-to-top > a{
-    text-decoration: none;
+.footer-text{
     color: white;
-    font-weight: 50px;
 }
 
-/* Blog post content */
+/*----- Blog post content ------*/
 .button{
     padding-left: 3%;
 }
@@ -156,7 +170,7 @@ body {
     padding-left: 30px;
 }
 
-/*-- Profile Pic --*/
+/*------- User Profile  -------*/
 .profile-pic > img{
     width: 200px;
     height:200px;
@@ -186,12 +200,19 @@ body {
     padding-top:20px;
 }
 
-.login > h1{
-    padding-top: 10%;
+.user_img > img{
+    height: 50px;
+    width:100%;
 }
 
-.footer-text{
-    color: white;
+#user-body{
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+/*----- Login Section ----*/
+.login > h1{
+    padding-top: 10%;
 }
 
 #send > .btn {
@@ -202,37 +223,9 @@ body {
     padding-top:10px;
 }
 
-.carousel-inner{
-    height: 600px;
-}
-
-.landscape{
-    height: 700px;
-    width: 100%;
-}
-
 .intro > p{
     font-size: large;
     padding: 4%;
-}
-
-.carousel-item-active > img{
-    opacity: 0.7;
-}
-
-.card-img-top{
-    height: 100%;
-    width: 100%;
-}
-
-.user_img > img{
-    height: 50px;
-    width:100%;
-}
-
-#user-body{
-    padding-bottom: 20px;
-    background-color: white;
 }
 
 #thanks{
