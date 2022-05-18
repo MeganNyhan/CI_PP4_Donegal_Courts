@@ -114,7 +114,7 @@
 <li> It is used by the Admin to post images to sections where this model is used. </li>
 <li> It includes the following fields: image, title and sub-title.</li>
 
-<p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue passwords.</p>
+<p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue        passwords.</p>
 <p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
 <details><summary>Database Diagram</summary>
         <img src="docs/database-diagram/diagram.png"></details>
@@ -122,11 +122,12 @@
 
 ### User Manual:
 <ol>
-<li>---</li>
-<li> ----</li>
-<li>----</li>
-<li> ----</li>
-<li> ----</li>
+<li>The Site is very simple in design - It includes a home section where a user can view a blog post, a members section for login and registration, and then a contact section located at the bottom of the webpage.</li>
+<li>The blog posts have a very simple design - the title, the post body, the author section with information of the author and the comments section for views to create a comment.</li>
+    <p> -- If the user is the site admin a edit post and delete post section is added.</p>
+<li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow.</li>
+<li> Finally the contact Page allows the user to simply email the admin of the site to get more information or to leave a comment. The address and phone number are on the page.</li>
+<li> All forms have validation as well to give real-time feedback to users.</li>
 </ol>
 
 <hr>
