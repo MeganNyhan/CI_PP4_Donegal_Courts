@@ -278,7 +278,7 @@
 <img src=""></details>
 
 ### HTML Validation
-<p> To Validate my HTML I used the WC3 Validator. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+<p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
 
 <details><summary>-</summary>
 <img src=""></details>
@@ -287,10 +287,22 @@
 <img src=""></details>
 
 ### CSS Validation
-<p> To Validate my CSS I used the Jigsaw W3 Validator. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+<p> To Validate my CSS I used the Jigsaw W3 Validator. All CSS code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
 
 <details><summary>-</summary>
 <img src=""></details>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+### Accessibility
+<p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+### Performance
+<p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
 
 <details><summary>-</summary>
 <img src=""></details>
