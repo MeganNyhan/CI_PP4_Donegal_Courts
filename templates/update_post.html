@@ -1,33 +1,29 @@
 {% extends 'base.html' %}
-
 {% block title %}Edit Blog Post{% endblock %}
-
 {% block content %}
 <div class = "container">
     <div class="row">
         {% if user.is_authenticated %}
             {% if user.id == post.author.id %}
-
+<!-- Update Post Form -->
                 <div class="form-group">
                     <form method="POST">
                         <br/><br/>
                             <h1>Update this Blog Post</h1>
-                       {%csrf_token%}
-                       {{ form.media }}
-                       {{ form.as_p }}
+                                {%csrf_token%}
+                                {{ form.media }}
+                                {{ form.as_p }}
                        <button class="btn btn-dark">Post Edit</button>
                        <br/><br/>
-                       </form>
+                    </form>
                 </div>   
-
+<!-- End Update Post Form -->
             {% else %}
             <p> You are not allowed to edit a blog post.</p>
             {% endif %}
         {% else %}
             <p> You are not allowed to edit a blog post.</p>
-
         {% endif %}
     </div>
 </div>
-
 {% endblock %}

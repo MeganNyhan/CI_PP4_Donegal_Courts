@@ -1,20 +1,11 @@
 {% extends 'base.html'%}
-
 {% block title %} {{post.title_tag}} {% endblock %}
 {% load static %}
-
 {% block content %}
 <div class = "container" >
     <div class="row">
-    <h1 class="post-title"> {{ post.title }}</h1>
-    <small>
-        {% if messages %}
-                        <ul class="messages">
-                            {% for message in messages %}
-                            <li{% if messages.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
+        <h1 class="post-title"> {{ post.title }}</h1>
+        <small>
         {% if user.is_superuser %}
             {% if user.id == post.author.id %}
                 <a class="btn btn-warning"href="{% url 'update-post' post.pk %}"> Edit</a>
@@ -23,26 +14,24 @@
             {% endif %}
         {% endif %}
         <br/>
-    <small> By: {{ post.author.first_name }} - {{ post.post_date }}</small>
-    <br/><br/>
-        <!-- The featured image -->
+            <small> By: {{ post.author.first_name }} - {{ post.post_date }}</small>
+        <br/><br/>
+<!-- The featured image -->
             <img src="{{ post.featured_image.url }}">
         <br/>
-    <!-- Post Body Goes Here -->
+<!-- Post Body Goes Here -->
         <div class="post-body">
             {{ post.body|safe }}
         </div>
-    <!-- Back Button Goes Here -->
+<!-- Back Button Goes Here -->
         <div class="button">
             <a class="btn btn-dark " href="{% url 'home' %}">Back</a>
             <br/><br/>
-            <form action="{% url 'like_post' post.pk %}"
-            method="POST">
-            {% csrf_token %}
-            <button type="submit", name="post_id", value="{{ post.id }}", class="btn btn-danger btn-md float-left">
-                 Like  <i class="fa-solid fa-thumbs-up"></i></button> - {{ total_likes }}
-                 Likes
-            </form>
+                <form action="{% url 'like_post' post.pk %}" method="POST">
+                    {% csrf_token %}
+                        <button type="submit", name="post_id", value="{{ post.id }}", class="btn btn-danger btn-md float-left">
+                        Like  <i class="fa-solid fa-thumbs-up"></i></button> - {{ total_likes }} Likes
+                        </form>
             <br/><br/>
             <hr>
             <br/>   
@@ -82,7 +71,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
       <br/>
       <hr>
 <!-- Comments Section -->
@@ -97,20 +86,19 @@
             <a href="{% url 'add-comment' post.pk %}">Add Comment</a>
             <br/>
                 {% for comment in post.comments.all %}
-                <br/>
-                    <strong>
+            <br/>
+                <strong>
                 {{ comment.name }} | {{ comment.date_added }}
-                    </strong>
-                    <div class="comment-body">
-                        {{ comment.body }}
-                    </div>
+                </strong>
+                <div class="comment-body">
+                    {{ comment.body }}
+                </div>
                     <br><br/>
                 {% endfor %}
             {% endif %}
             <br/><br/>
             </div>
         </div>
-    </div>
 </div>
 {% endblock %}
 

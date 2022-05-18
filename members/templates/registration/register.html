@@ -1,27 +1,25 @@
 {% extends 'base.html' %}
-
 {% block title %}Sign Up!{% endblock %}
-
 {% block content %}
 <br/><br/>
-
 <div class="container">
     <div class="row">
     <br/><br/>
         <h1>Sign Up!</h1>
+<!-- Registration Form-->
                 <div class="form-group">
                     <form id="register-form" method="POST">
-
-                    {% csrf_token %}
-                    {{ form.as_p }}
-
+                        {% csrf_token %}
+                        {{ form.as_p }}
                     <br/><br/>
+                    </form>
                 </div> 
             <br/>
-            <div class="col-sm">
+        <div class="col-sm">
             <button class="btn btn-dark"> Sign Up </button>
-            </div>
-            <br/><br/><br/>
-</div> 
+        </div>
+<!-- End of Registration Form-->
+    <br/><br/><br/>
+    </div> 
 </div>
 {% endblock %}

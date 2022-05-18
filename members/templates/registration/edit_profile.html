@@ -1,22 +1,20 @@
 {% extends 'base.html' %}
-
 {% block title %}Edit your Profile{% endblock %}
-
 {% block content %}
 <div class="container">
     <br/><br/>
-    <h1 class="edit">Edit your Profile</h1>
+<!-- Edit Profile Form -->
+        <h1 class="edit">Edit your Profile</h1>
     <br/><br/>
     <div class="row">
         <div class="form-group">
             <form method="POST">
-
-            {%csrf_token%}
-            {{ form.as_p }}
-
+                {%csrf_token%}
+                {{ form.as_p }}
             <button class="btn btn-dark">Update Profile</button>
             <br/><br/>
         </div>    
-</div>
+    </div>
+<!-- End Edit Profile Form -->
 </div>
 {% endblock %}

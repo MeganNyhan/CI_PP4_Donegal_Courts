@@ -4,6 +4,7 @@
 <br/><br/> 
 <div class="container">
     <div class="row">
+<!-- Comment form -->
         <div class="comments">
             {% if user.is_authenticated %}
                  <br/><br/>
@@ -17,14 +18,17 @@
             
                     <button class="btn btn-dark">Add Comment</button>
                 </div>
+<!-- End Comment form -->
         </div>
             {% else %}
+<!-- Sign-in for users who aren't authenticated -->
             <p> You're need an account to leave a comment, would you like to register? If you already have an account please sign in</p>
             <div class="button">
                 <a class="btn btn-dark " href="{% url 'register' %}">Register</a>
                 <a class="btn btn-dark " href="{% url 'login' %}">Login</a>
             </div>
         {% endif %}
+<!--End Sign-in for users who aren't authenticated -->
     </div>
 </div>
 <br/><br/> 

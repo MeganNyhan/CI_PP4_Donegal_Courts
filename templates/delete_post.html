@@ -1,24 +1,22 @@
 {% extends 'base.html' %}
-
 {% block title %}Delete Blog Post{% endblock %}
-
 {% block content %}
 <div class = "container" >
     <div class="row">
-{% if user.is_authenticated %}
-    {% if user.is_authenticated %}
+        {% if user.is_authenticated %}
+        {% if user.is_authenticated %}
+<!-- Start Delete Post Form -->
         <div class="form-group">
             <form method="POST">
                 <br/><br/>
                 <h1>Delete this Blog Post</h1>
                 <br/><br/>
                     <h3> Delete: {{ post.title }}</h3>
-
-               {%csrf_token%}
-                <p>Are you sure you want to delete this post? It can not be undone!</p></br>
+                    {%csrf_token%}
+                    <p>Are you sure you want to delete this post? It can not be undone!</p></br>
                 <br/><br/>
-               <button class="btn btn-danger">Delete Post</button>
-               <a class="btn btn-dark" href="{% url 'home' %}">No, Keep Post</a> 
+                    <button class="btn btn-danger">Delete Post</button>
+                    <a class="btn btn-dark" href="{% url 'home' %}">No, Keep Post</a> 
                <br/><br/>
                <br/><br/>
                <br/><br/>
@@ -27,16 +25,15 @@
                <br/><br/>
                <br/><br/>
                <br/><br/>
-
+            </form>
         </div>
+<!-- End Delete Post Form -->
         {% else%}
             <p> You are not allowed to delete a blog post.</p>
             <br>
         {% endif %}
 {% else %}
-
-<p> You are not allowed to delete a blog post.</p>
-
+    <p> You are not allowed to delete a blog post.</p>
 {% endif %}
 </div>
 </div>

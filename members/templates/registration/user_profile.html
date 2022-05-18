@@ -3,14 +3,13 @@
 {% load static %}
 {% block content %}
 <!-- Bootstrap Card Horizontal -->
-  <!-- End of Slider -->
-  <br/>
+<br/>
   <div class="container">
     <div class="row">
     <div class="carousel-inner">
         <div class="carousel-caption d-none d-md-block text-black">
                 <h2><strong>{{page_user.user.first_name }} {{ page_user.user.last_name }}'s Profile</h2>
-              </div>
+        </div>
         <div class="carousel-item-active landscape active ">
             <img src="{{ page_user.profile_pic.url }}" class="d-block w-100" alt="...">
         </div>
@@ -46,13 +45,14 @@
                     </p>
                 <p class="card-text">{{ page_user.bio }}</p>
                 <div class="button">
-                  <a class="btn btn-dark " href="{% url 'home' %}">Back</a>
+                    <a class="btn btn-dark " href="{% url 'home' %}">Back</a>
                   <br/>
+                </div>
                 </div>
             </div>
             </div>
-            </div>
         </div>
-</div>
-</div>
+    </div>
+    </div>
+<!-- End Bootstrap Card Horizontal -->
 {% endblock %}
