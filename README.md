@@ -177,6 +177,8 @@
 
 <ul>
 <li> Python </li>
+<li> HTML </li>
+<li> CSS </li>
 </ul>
 
 ###  Frameworks and Tools used & 3rd Party Libraries:
@@ -188,7 +190,6 @@
 <li> Heroku </li>
 <li> Django </li>
 <li> BootStap 5 </li>
-<li> AJAX form Validation </li>
 <li> JavaScript </li>
 </ul>
 <hr>
@@ -268,6 +269,33 @@
 ## Testing:
 
 ### Python Validation
+<p> To Validate my Python I used the PEP8 Online Validation Service. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+### HTML Validation
+<p> To Validate my HTML I used the WC3 Validator. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+### CSS Validation
+<p> To Validate my CSS I used the Jigsaw W3 Validator. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+<details><summary>-</summary>
+<img src=""></details>
+
+### Automatic Testing
 <p> To Validate my Python I used the PEP8 Online Validation Service. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
 
 <details><summary>-</summary>
@@ -407,6 +435,7 @@
 <li> Search for a repository and connect to it.</li>
 <li> Click the button enable automatic deploys and the the button deploy branch.</li>
 <li> Wait for the app to build and then click th eview button.</li>
+<br>
 
 ### Forking a Repository
 
@@ -416,6 +445,7 @@
 <li> In the top right corner click the fork button. </li>
 <li> Now you will have a copy of the repository in your account! </li>
 </ol>
+<br>
 
 ### Cloning a Repository
 
@@ -430,6 +460,8 @@
 <li> Press Enter.</li>
 </ol>
 
+<br>
+
 ## Credits:
 ### Source Code Used in Site
 
@@ -442,7 +474,7 @@
 <p> I used these videos/ articles soley as a guide I did not copy and paste.</p>
 <ul>
 <li>Photo by Moose Photos: https://www.pexels.com/photo/woman-wearing-pink-collared-half-sleeved-top-1036623/</li>
-        - <li> </li>
+        <li> Other images used were from donegal daily in their court posts with no clear owner.</li>
 <hr>
 
 ## Acknowledgements:
@@ -454,4 +486,4 @@
 </ul>
 
 ## Future Features
-<p>--</p>
+<p>In future, I would like to add a section where users could view a list of solicitors and barristers in the area that could help them if they needed legal advice.</p>
