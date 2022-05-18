@@ -19,16 +19,26 @@
                     <button class="btn btn-dark">Add Comment</button>
                 </div>
 <!-- End Comment form -->
-        </div>
             {% else %}
 <!-- Sign-in for users who aren't authenticated -->
-            <p> You're need an account to leave a comment, would you like to register? If you already have an account please sign in</p>
-            <div class="button">
-                <a class="btn btn-dark " href="{% url 'register' %}">Register</a>
-                <a class="btn btn-dark " href="{% url 'login' %}">Login</a>
-            </div>
+            <br/><br/>
+            <br/><br/>
+            <br/><br/>
+            <br/><br/>
+            <br/><br/>
+                <p> You're need an account to leave a comment, would you like to register? If you already have an account please sign in...</p>
+                <div class="button-center">
+                    <a class="btn btn-dark " href="{% url 'register' %}">Register</a>
+                    <a class="btn btn-dark " href="{% url 'login' %}">Login</a>
+                </div>
+            <br/><br/>
+            <br/><br/>
+            <br/><br/>
+            <br/><br/>
+            <br/>
         {% endif %}
 <!--End Sign-in for users who aren't authenticated -->
+        </div>
     </div>
 </div>
 <br/><br/> 
