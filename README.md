@@ -280,7 +280,7 @@
 
 ### Testing User Stories
 
-    1."--"
+    1."As a user of the site, I want to be able to Browse through content on the website."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
@@ -289,7 +289,7 @@
 </details>
 <hr>
 
-    2."."
+    2."As a user of the site, I want to be able to View Court News Stories."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
@@ -298,7 +298,7 @@
 </details>
 <hr>
 
-    3."."
+    3."As a user of the site, I want to be able to View Court News Stories in a List."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
@@ -306,7 +306,7 @@
 <img src="docs/flow_chart/features/intro_screen.png"></details>
 <hr>
 
-    4.""
+    4."As a user of the site, I want to be able to open and read the court news stories."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
@@ -317,7 +317,7 @@
 <img src="docs/flow_chart/features/winner_screen.png"></details>
 <hr>
 
-    5.""
+    5."As a user of the site, I want to be able to View comments under each post."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
@@ -326,38 +326,46 @@
 
 <hr>
 
-    6.""
+    6."As an authorized user of the site, I want to be able to Post Comments."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
 <details><summary>User Testing 6</summary>
 <img src="docs/flow_chart/features/game_feedback.png"></details>
 
-### Testing Site Owner's Stories
-
-    1.""
+   7."As a user of the site, I want to be able to Register for an account."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
 <details><summary>User Testing 7</summary>
+<img src="docs/flow_chart/features/game_feedback.png"></details>
+
+
+### Testing Site Owner's Stories
+
+    1."As an authorized owner of the site, I want to be able to Post Stories to the site."
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>User Testing 8</summary>
 <img src="docs/flow_chart/features/intro_screen.png"></details>
 <hr>
 
-    2.""
+    2."As an authorized owner of the site, I want to be able to Create story drafts to come back to."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
 
-<details><summary>User Testing 8</summary>
+<details><summary>User Testing 9</summary>
 <img src="docs/flow_chart/features/game_play.png">
 </details>
 <hr>
 
-    3.""
+    3."As an authorized owner of the site, I want to be able to Manage site content."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
-<details><summary>User Testing 9</summary>
+<details><summary>User Testing 10</summary>
 <img src="docs/flow_chart/features/intro_screen.png">
 <img src="docs/flow_chart/features/game_play.png">
 <img src="docs/flow_chart/features/loser_screen.png">
@@ -365,11 +373,11 @@
 </details>
 <hr>
 
-    4.""
+    4."As an authorized owner of the site, I want to be able to Manage comments under posts."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 
-<details><summary>User Testing 10</summary>
+<details><summary>User Testing 11</summary>
 <img src="docs/flow_chart/features/game_feedback.png"></details>
 <hr>
 
