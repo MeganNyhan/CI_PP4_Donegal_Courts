@@ -482,6 +482,7 @@
 <li> Codemy: https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi </li>
 <li>Django Documentation: https://docs.djangoproject.com/en/4.0/topics/email/</li>
 <li> SitePoint: https://www.sitepoint.com/django-send-email/</li>
+<li> Plainenglish: https://python.plainenglish.io/how-to-create-a-contact-page-for-your-django-website-6b97dddedb2d</li>
 </ul>
 <p> I used these videos/ articles soley as a guide I did not copy and paste.</p>
 <ul>
