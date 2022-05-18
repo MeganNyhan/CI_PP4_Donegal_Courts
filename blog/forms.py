@@ -31,11 +31,3 @@ class CommentForm(forms.ModelForm):
             'body': forms.Textarea(attrs={'class': 'form-control'})
         }
 
-
-class ContactForm(forms.Form):
-    """
-        This is the contact form
-    """
-    from_email = forms.EmailField(required=True)
-    subject = forms.CharField(required=True)
-    message = forms.CharField(widget=forms.Textarea, required=True)

@@ -2,7 +2,7 @@
 from django.shortcuts import render, redirect, get_object_or_404 
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
-from .forms import EditForm, CommentForm, ContactForm
+from .forms import EditForm, CommentForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse_lazy, reverse

@@ -7,11 +7,11 @@ def contactForm(request):
     if request.method == "POST":
         contact = Contact()
         name = request.POST.get('name')
-        from_email = request.POST.get('from_email')
+        email = request.POST.get('email')
         message = request.POST.get('message')
 
         contact.name = name
-        contact.from_email = from_email
+        contact.email = email
         contact.message = message
         contact.save()
 
