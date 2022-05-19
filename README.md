@@ -215,15 +215,15 @@
  <p>User Stories covered : 1, 2, 3, 4, 7</p>
  <p>Site Owner's Stories covered: 0 </p>
         <details><summary>Slider</summary>
-        <img src="-"></details>
+        <img src="docs/user-stories/slider.png"></details>
         <details><summary>Blog Post List</summary>
-        <img src="-"></details>
+        <img src="docs/user-stories/blog_post_list.png"></details>
         <details><summary>Login/ Registration (nav)</summary>
-        <img src="-"></details>
+        <img src="docs/user-stories/login:register.png"></details>
         <details><summary>The logout section (nav)</summary>
-        <img src="-"></details>
+        <img src="docs/user-stories/logout.png"></details>
         <details><summary>Contact Us (footer)</summary>
-        <img src="-"></details>
+        <img src="docs/user-stories/contact.png"></details>
 
 #### Blog Post
 <p> The blog post page holds the most content for users on the site. </p>
@@ -238,17 +238,17 @@
     <p> User Stories covered:4, 5, 6</p>
     <p>Site Owner's Stories covered: 4 </p>
         <details><summary>Blog post</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/blog_post.png"></details>
         <details><summary>Back Button</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/like.png"></details>
         <details><summary>Like</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/like.png"></details>
         <details><summary>User Profile</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/user_profile.png"></details>
         <details><summary>Comment Section/ Comment Form</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/comment.png"></details>
         <details><summary>Delete and Edit Section</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/delete:edit.png"></details>
 
 #### Admin Section
 <p> The admin section is the backend of the site that the admin can log into to create blog posts, create blog post drafts, delete posts, delete comments, and add more content to their admin user profile. </p>
@@ -262,15 +262,15 @@
     <p> User Stories covered: 0 </p>
     <p>Site Owner's Stories covered: 1, 2, 3, 4 </p>
         <details><summary>Users</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/users.png"></details>
         <details><summary>Posts</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/posts.png"></details>
         <details><summary>Comments</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/comments.png"></details>
         <details><summary>Profile</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/profile.png"></details>
         <details><summary>Carousel</summary>
-        <img src=""></details>
+        <img src="docs/user-stories/carousel.png"></details>
 <hr>
 
 ## Testing:
