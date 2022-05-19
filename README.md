@@ -102,7 +102,7 @@
 
 <p> Post: </p>
 <li> This post model will allow me to post onto the site, and create the required variables fields.</li>
-<li> It is used by several users to post blog post to the site, there for it uses a Foreign Key. </li>
+<li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
 <li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
 
 <p> Comment: </p>
@@ -114,6 +114,11 @@
 <li> This carousel model was to create a Carousel on the site that could be edited by the admin in the admin section.</li>
 <li> It is used by the Admin to post images to sections where this model is used. </li>
 <li> It includes the following fields: image, title and sub-title.</li>
+
+<p> Contact: </p>
+<li> This contact model will allow me to save the contact forms that are sent to the admin of the site, and store the details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
+<li> It is used by several users to contact the admin of the site, there for it uses a input fields. </li>
+<li> It includes the following fields: name, email and message.</li>
 
 <p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue        passwords.</p>
 <p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
@@ -127,7 +132,8 @@
 <li>The blog posts have a very simple design - the title, the post body, the author section with information of the author and the comments section for views to create a comment.</li>
     <p> -- If the user is the site admin a edit post and delete post section is added.</p>
 <li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow.</li>
-<li> Finally the contact Page allows the user to simply email the admin of the site to get more information or to leave a comment. The address and phone number are on the page.</li>
+<li> Finally the contact Page allows the user to simply message the admin of the site to get more information or to leave a comment. The address and phone number are also on the page.</li>
+<li> The admin mainly uses the Admin section of the site to post blog posts, look at messages that were left by users of the contact form and to manage comments left in the site ie. delete abusive comments if they are left.</li>
 <li> All forms have validation as well to give real-time feedback to users.</li>
 </ol>
 
