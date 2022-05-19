@@ -24,7 +24,7 @@
                 </div>   
             <div class="col-md-10">
                 <div class="card-body" id="user-body">
-                    <h5 class="card-title"><strong>{{ page_user.user.first_name }} {{ page_user.user.last_name }}</strong></h5>
+                    <h5 class="card-title">{{ page_user.user.first_name }} {{ page_user.user.last_name }}</h5>
                     <p class="small text-muted" id="user-links"> 
                         {% if page_user.website_url %}
                             | <a href="https://www.donegaldaily.com/" target="_blank"> Website </a>
@@ -43,10 +43,8 @@
                         {% endif %}
                     </p>
                 <p class="card-text"><small>{{ page_user.bio }}</small></p>
-                <div class="button">
-                    <a class="btn btn-dark " href="{% url 'home' %}">Back</a>
-                  <br/>
-                </div>
+                <a class="btn btn-dark " href="{% url 'home' %}">Return to home</a>
+                <br/>
                 </div>
             </div>
             </div>
