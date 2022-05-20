@@ -7,7 +7,7 @@
     <br/><br/>
         <h1>Sign Up!</h1>
 <!-- Registration Form-->
-                <div class="form-group">
+                <div id="register"class="form-group">
                     <form id="register-form" method="POST">
                         {% csrf_token %}
                         {{ form.as_p }}
@@ -15,10 +15,23 @@
                 </div> 
             <br/>
         <div class="col-sm">
-            <button class="btn btn-dark"> Sign Up </button>
+            <button class="btn btn-dark"> Register </button>
+            <a class="btn btn-dark " href="{% url 'login' %}">Sign in</a>
         </div>
 <!-- End of Registration Form-->
     <br/><br/><br/>
     </div> 
 </div>
+<!-- Ajax Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+<script src="https://malsup.github.io/jquery.form.js"></script>
+<script> 
+    // wait for the DOM to be loaded 
+    $(document).ready(function() { 
+        // bind 'form' and provide a simple callback function 
+        $('#register').ajaxForm(function() { 
+            alert("Your profile has been created!"); 
+        }); 
+    }); 
+</script> 
 {% endblock %}

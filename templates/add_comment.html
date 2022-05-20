@@ -11,12 +11,13 @@
                      <h1>Comment on this Post</h1>
                 <br/><br/>
                 <div class="form-group">
-                    <form method="POST">
+                    <form id="comment" method="POST">
             
                         {%csrf_token%}
                         {{ form.as_p }}
             
                     <button class="btn btn-dark">Add Comment</button>
+                    <a class="btn btn-dark " href="{% url 'home' %}">Return to Home Page</a>
                 </div>
 <!-- End Comment form -->
             {% else %}
@@ -42,4 +43,15 @@
     </div>
 </div>
 <br/><br/> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+<script src="https://malsup.github.io/jquery.form.js"></script>
+<script> 
+    // wait for the DOM to be loaded 
+    $(document).ready(function() { 
+        // bind 'form' and provide a simple callback function 
+        $('#comment').ajaxForm(function() { 
+            alert("Your comment has been added!"); 
+        }); 
+    }); 
+</script> 
 {% endblock %}
