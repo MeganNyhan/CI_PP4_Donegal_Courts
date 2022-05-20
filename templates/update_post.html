@@ -7,13 +7,14 @@
             {% if user.id == post.author.id %}
 <!-- Update Post Form -->
                 <div class="form-group">
-                    <form method="POST">
+                    <form id="edit-post" method="POST">
                         <br/><br/>
                             <h1>Update this Blog Post</h1>
                                 {%csrf_token%}
                                 {{ form.media }}
                                 {{ form.as_p }}
-                       <button class="btn btn-dark">Post Edit</button>
+                        <button class="btn btn-dark">Post Edit</button>
+                            <a class="btn btn-dark" href="{% url 'home' %}">Retrun to the Home Page</a> 
                        <br/><br/>
                     </form>
                 </div>   
@@ -26,4 +27,16 @@
         {% endif %}
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+<script src="https://malsup.github.io/jquery.form.js"></script> 
+
+<script> 
+    // wait for the DOM to be loaded 
+    $(document).ready(function() { 
+        // bind 'myForm' and provide a simple callback function 
+        $('#edit-post').ajaxForm(function() { 
+            alert("This post has been updated!"); 
+        }); 
+    }); 
+</script> 
 {% endblock %}

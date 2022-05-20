@@ -490,13 +490,15 @@
 <li>Django Documentation: https://docs.djangoproject.com/en/4.0/topics/email/</li>
 <li> SitePoint: https://www.sitepoint.com/django-send-email/</li>
 <li> Plainenglish: https://python.plainenglish.io/how-to-create-a-contact-page-for-your-django-website-6b97dddedb2d</li>
+<li>https://learncodeweb.com: Used for the AJAX Pop-Up: https://learncodeweb.com/web-development/how-to-create-a-custom-popup-form-with-php-and-ajax/</li>
 </ul>
+<br>
 <p> I used these videos/ articles soley as a guide I did not copy and paste.</p>
 <ul>
 <li>Photo by Moose Photos: https://www.pexels.com/photo/woman-wearing-pink-collared-half-sleeved-top-1036623/</li>
         <li> Other images used were from donegal daily in their court posts with no clear owner.</li>
 <hr>
-
+<br>
 ## Acknowledgements:
 <p> I would like to take this oppurtuinity to thank and acknowlege the following people:
 <ul>
