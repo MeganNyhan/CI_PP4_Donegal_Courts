@@ -186,6 +186,7 @@
 <li> Python </li>
 <li> HTML </li>
 <li> CSS </li>
+<li> JavaScript </li>
 </ul>
 
 ###  Frameworks and Tools used & 3rd Party Libraries:
@@ -197,7 +198,6 @@
 <li> Heroku </li>
 <li> Django </li>
 <li> BootStap 5 </li>
-<li> JavaScript </li>
 </ul>
 <hr>
 
