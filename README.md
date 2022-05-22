@@ -30,8 +30,8 @@
     2. [HTML Validation](#html-validation)
     3. [CSS Validation](#css-validation)
     4. [JavaScript Validation](#javascript-validation)
-    5. [Accessibility] (#accessibility)
-    6. [Performance] (#performance)
+    5. [Accessibility](#accessibility)
+    6. [Performance](#performance)
     7. [Testing user stories](#testing-user-stories)
 7. [Bugs](#Bugs)
 8. [Deployment](#deployment)
@@ -287,9 +287,18 @@
 ### HTML Validation
 <p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
 
+<details><summary>Home Page</summary>
+<img src=""></details>
 <details><summary>-</summary>
 <img src=""></details>
-
+<details><summary>-</summary>
+<img src=""></details>
+<details><summary>-</summary>
+<img src=""></details>
+<details><summary>-</summary>
+<img src=""></details>
+<details><summary>-</summary>
+<img src=""></details>
 <details><summary>-</summary>
 <img src=""></details>
 
@@ -452,8 +461,8 @@
 <li> Add url in settings.py on ALLOWED_HOSTS.</li>
 <li> Go to the deploy tab and pick GitHub as deployment method.</li>
 <li> Search for a repository and connect to it.</li>
-<li> Click the button enable automatic deploys and the the button deploy branch.</li>
-<li> Wait for the app to build and then click th eview button.</li>
+<li> Click the button enable automatic deploys and the button deploy branch.</li>
+<li> Wait for the app to build and then click the rview button.</li>
 <br>
 
 ### Forking a Repository
