@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['donegalcourts.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://donegal-courts.herokuapp.com/', 'localhost']
 
 # Message Storage
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
