@@ -1,7 +1,7 @@
 # Donegal Courts Blog
  
 <img src="" alt="Mockup of my blog across multiple devices">
-<a href="https://donegalcourts.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
+<a href="https://donegal-courts.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
 
 ## Project Goals 
 <ul>
