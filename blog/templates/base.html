@@ -62,15 +62,6 @@
         </div>
       </nav>
 <!-- End Boostrap Nav Bar-->
-<!-- Messages for pop-ups from forms -->
-{% if messages %}
-  <ul class="messages">
-    {% for message in messages %}
-      <li{% if messages.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-    {% endfor %}
-  </ul>
-{% endif %}
-<!-- End Messages for pop-ups from forms -->
 <!-- Extension of other html files -->
         {% block content %}
     

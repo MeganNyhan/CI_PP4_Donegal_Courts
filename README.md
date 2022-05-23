@@ -1,7 +1,7 @@
 # Donegal Courts Blog
  
 <img src="" alt="Mockup of my blog across multiple devices">
-<a href="https://donegalcourts.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
+<a href="https://donegal-courts.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
 
 ## Project Goals 
 <ul>
@@ -99,27 +99,27 @@
 <li> It is part of the django.db library. </li>
 <li> It includes the following fields: user, bio, profile_pic, website_url, facebook_url, twitter_url, instagram_url, pinterest_url.</li>
 <li> It includes a One to One field which is apart of a command to delete history of a user if the user is deleted.</li>
-
+<br>
 <p> Post: </p>
 <li> This post model will allow me to post onto the site, and create the required variables fields.</li>
 <li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
 <li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
-
+<br>
 <p> Comment: </p>
 <li> This comment model will allow users to post comments under the blog post.</li>
 <li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
 <li> It includes the following fields: post, name, body, date_added.</li>
-
+<br>
 <p> Carousel: </p>
 <li> This carousel model was to create a Carousel on the site that could be edited by the admin in the admin section.</li>
 <li> It is used by the Admin to post images to sections where this model is used. </li>
 <li> It includes the following fields: image, title and sub-title.</li>
-
+<br>
 <p> Contact: </p>
 <li> This contact model will allow me to save the contact forms that are sent to the admin of the site, and store the details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
 <li> It is used by several users to contact the admin of the site, there for it uses a input fields. </li>
 <li> It includes the following fields: name, email and message.</li>
-
+<br>
 <p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue        passwords.</p>
 <p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
 <details><summary>Database Diagram</summary>
@@ -232,8 +232,8 @@
     <li> Back Button: Directly under the post title is a back button the user can use to look through the other blog posts.</li>
     <li> Like: The user can like the post and the like will be counted. The user can only like the post if they are logged in with an account. </li>
     <li> User Profile: The admin has a section under the post that displays the authors bio, urls and a link to the authors user profile on the site. The user profile is an oppurtunity for the author to add a bio about themselves that highlights their experiecnce and education. </li>
-    <li> Comment Section/ Comment Form: The comment section is an area under the blog post that allows the user of the site to add comments to the blog post to help create a public discussion on each blog post that is on the site. The users of the site, if logged in, are freely allowed to post in real-time, but if its offensive the admin can delete it in the admin section of the site.<li>
-    <li> Delete and Edit Section: If the user is a superuser of the site they will be able to delete and edit the blog post as the want using forms. <li>
+    <li> Comment Section/ Comment Form: The comment section is an area under the blog post that allows the user of the site to add comments to the blog post to help create a public discussion on each blog post that is on the site. The users of the site, if logged in, are freely allowed to post in real-time, but if its offensive the admin can delete it in the admin section of the site.</li>
+    <li> Delete and Edit Section: If the user is a superuser of the site they will be able to delete and edit the blog post as the want using forms. </li>
 </ul>
     <p> User Stories covered:4, 5, 6</p>
     <p>Site Owner's Stories covered: 4 </p>
@@ -369,6 +369,7 @@
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |Detailed blog post section of the site| The user can read the blog post stories once they have navigated into a story the want to read.| The user can read the post on the site| Works as expected|
+
 <details><summary>User Testing 4</summary>
 <img src="docs/test-user-stories/read_post.png"></details>
 <hr>
@@ -448,9 +449,9 @@
 
 ## Deployment:
 
-### Deploying to Heroku
+### Deploying to Heroku (Automatic)
 
-<ol> 
+<ul> 
 <li> Use pip3 freeze > requirements.txt in terminal to save libraries that need to be installed on Heroku as well.</li>
 <li> Create Procfile and add web: gunicorn blog.wsgi.</li>
 <li> Log in to Heroku.</li>
@@ -466,7 +467,19 @@
 <li> Search for a repository and connect to it.</li>
 <li> Click the button enable automatic deploys and the button deploy branch.</li>
 <li> Wait for the app to build and then click the rview button.</li>
+</ul>
 <br>
+
+### Deploying to Heroku (Manual CLI)
+<ul>
+<p> In Gitpod terminal; </p>
+<li>enter in 'heroku login -i'</li>
+<li> Then enter 'heroku apps</li>
+<li> Set the heroku remote > enter into the terminal 'heroku git:remote -a 'your app name'</li>
+<li> git add . and git commit -m </li>
+<li> git push origin main </li>
+<li> git push heroku main </li>
+</ul>
 
 ### Forking a Repository
 
@@ -511,6 +524,7 @@
         <li> Other images used were from donegal daily in their court posts with no clear owner.</li>
 <hr>
 <br>
+
 ## Acknowledgements:
 <p> I would like to take this oppurtuinity to thank and acknowlege the following people:
 <ul>
