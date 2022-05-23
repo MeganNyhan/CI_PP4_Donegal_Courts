@@ -339,62 +339,65 @@
     1."As a user of the site, I want to be able to Browse through content on the website."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Home section of blog post site| The user can scroll through the content uploaded by the site admin| The user can browse through the content on the site| Works as expected|
 
 <details><summary>User Testing 1</summary>
-<img src="docs/flow_chart/features/game_play.png">
+<img src="docs/test-user-stories/content.png">
 </details>
 <hr>
 
     2."As a user of the site, I want to be able to View Court News Stories."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Home section of blog post site| The user can scroll through the content uploaded by the site admin and read the court news stories| The user can browse through the content on the site| Works as expected|
 
 <details><summary>User Testing 2</summary>
-<img src="docs/flow_chart/features/game_play.png">
+<img src="docs/test-user-stories/content.png">
+<img src="docs/test-user-stories/read_post">
 </details>
 <hr>
 
     3."As a user of the site, I want to be able to View Court News Stories in a List."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-
+|Home section of blog post site| The user can scroll through the content uploaded by the site admin. The blog posts are shown in a list formate| The user can browse through the content on the site| Works as expected|
 <details><summary>User Testing 3</summary>
-<img src="docs/flow_chart/features/intro_screen.png"></details>
+<img src="docs/test-user-stories/view_stories.png"></details>
 <hr>
 
     4."As a user of the site, I want to be able to open and read the court news stories."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-
+|Detailed blog post section of the site| The user can read the blog post stories once they have navigated into a story the want to read.| The user can read the post on the site| Works as expected|
 <details><summary>User Testing 4</summary>
-<img src="docs/flow_chart/features/intro_screen.png">
-<img src="docs/flow_chart/features/game_play.png">
-<img src="docs/flow_chart/features/loser_screen.png">
-<img src="docs/flow_chart/features/winner_screen.png"></details>
+<img src="docs/test-user-stories/read_post.png"></details>
 <hr>
 
     5."As a user of the site, I want to be able to View comments under each post."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Comments section under blog post| The user can read comments left by other users that have visited the site| The user can read the comments for posts on the site| Works as expected|
 
 <details><summary>User Testing 5</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/view_comment.png"></details>
 
 <hr>
 
     6."As an authorized user of the site, I want to be able to Post Comments."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Comments section under blog post| The user can create and post comments under the blog posts| The user can create the comments for posts on the site| Works as expected|
 
 <details><summary>User Testing 6</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/post_comment.png"></details>
 
    7."As a user of the site, I want to be able to Register for an account."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Register Section in Nav Bar| The user can create an account with the site| The user can create their account and leave comments if wanted | Works as expected|
 
 <details><summary>User Testing 7</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/register.png"></details>
 
 
 ### Testing Site Owner's Stories
@@ -402,39 +405,39 @@
     1."As an authorized owner of the site, I want to be able to Post Stories to the site."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Django admin section| The admin can create blog post to be displayed in the site| The admin can create a blog post in their admin section to be displayed on the site | Works as expected|
 
 <details><summary>User Testing 8</summary>
-<img src="docs/flow_chart/features/intro_screen.png"></details>
+<img src="docs/test-user-stories/post_admin.png"></details>
 <hr>
 
     2."As an authorized owner of the site, I want to be able to Create story drafts to come back to."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-
+|Django admin section| The admin can create blog post to be displayed in the site. If the user doesn't want to post the blog post right away they can save it as a draft and come back to it| The admin can create a blog post in their admin section and save it as a draft | Works as expected|
 
 <details><summary>User Testing 9</summary>
-<img src="docs/flow_chart/features/game_play.png">
+<img src="docs/test-user-stories/post_admin.png">
 </details>
 <hr>
 
     3."As an authorized owner of the site, I want to be able to Manage site content."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Django admin section| The admin can create a blog post, delete a blog post, post comments and delete comments on posts to be displayed in the site.| The admin can create a blog post, delete a blog post, post comments and delete comments in their admin section | Works as expected|
 
 <details><summary>User Testing 10</summary>
-<img src="docs/flow_chart/features/intro_screen.png">
-<img src="docs/flow_chart/features/game_play.png">
-<img src="docs/flow_chart/features/loser_screen.png">
-<img src="docs/flow_chart/features/winner_screen.png">
+<img src="docs/test-user-stories/admin-control.png">
 </details>
 <hr>
 
     4."As an authorized owner of the site, I want to be able to Manage comments under posts."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Django admin section| The admin can delete comments on posts to be displayed in the site.| The admin can delete comments in their admin section, if the comments are offensive etc. | Works as expected|
 
 <details><summary>User Testing 11</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/manage_comment.png"></details>
 <hr>
 
 ## Bugs:
