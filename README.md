@@ -99,27 +99,27 @@
 <li> It is part of the django.db library. </li>
 <li> It includes the following fields: user, bio, profile_pic, website_url, facebook_url, twitter_url, instagram_url, pinterest_url.</li>
 <li> It includes a One to One field which is apart of a command to delete history of a user if the user is deleted.</li>
-
+<br>
 <p> Post: </p>
 <li> This post model will allow me to post onto the site, and create the required variables fields.</li>
 <li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
 <li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
-
+<br>
 <p> Comment: </p>
 <li> This comment model will allow users to post comments under the blog post.</li>
 <li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
 <li> It includes the following fields: post, name, body, date_added.</li>
-
+<br>
 <p> Carousel: </p>
 <li> This carousel model was to create a Carousel on the site that could be edited by the admin in the admin section.</li>
 <li> It is used by the Admin to post images to sections where this model is used. </li>
 <li> It includes the following fields: image, title and sub-title.</li>
-
+<br>
 <p> Contact: </p>
 <li> This contact model will allow me to save the contact forms that are sent to the admin of the site, and store the details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
 <li> It is used by several users to contact the admin of the site, there for it uses a input fields. </li>
 <li> It includes the following fields: name, email and message.</li>
-
+<br>
 <p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue        passwords.</p>
 <p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
 <details><summary>Database Diagram</summary>
