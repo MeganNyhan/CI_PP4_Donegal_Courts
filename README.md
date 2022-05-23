@@ -351,7 +351,8 @@
 |-------------|------------|---------------------|-------------------|
 |Home section of blog post site| The user can scroll through the content uploaded by the site admin and read the court news stories| The user can browse through the content on the site| Works as expected|
 <details><summary>User Testing 2</summary>
-<img src="docs/flow_chart/features/game_play.png">
+<img src="docs/test-user-stories/content.png">
+<img src="docs/test-user-stories/read_post">
 </details>
 <hr>
 
