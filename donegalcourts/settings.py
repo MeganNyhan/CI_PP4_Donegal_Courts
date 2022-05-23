@@ -32,7 +32,10 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['*', 'https://donegal-courts.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['*',
+                 '0.0.0.0',
+                 'https://donegal-courts.herokuapp.com',
+                 'localhost']
 
 # Message Storage
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'

@@ -359,25 +359,24 @@
     3."As a user of the site, I want to be able to View Court News Stories in a List."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-
+|Home section of blog post site| The user can scroll through the content uploaded by the site admin. The blog posts are shown in a list formate| The user can browse through the content on the site| Works as expected|
 <details><summary>User Testing 3</summary>
-<img src="docs/flow_chart/features/intro_screen.png"></details>
+<img src="docs/test-user-stories/view_stories.png"></details>
 <hr>
 
     4."As a user of the site, I want to be able to open and read the court news stories."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Detailed blog post section of the site| The user can read the blog post stories once they have navigated into a story the want to read.| The user can read the post on the site| Works as expected|
 
 <details><summary>User Testing 4</summary>
-<img src="docs/flow_chart/features/intro_screen.png">
-<img src="docs/flow_chart/features/game_play.png">
-<img src="docs/flow_chart/features/loser_screen.png">
-<img src="docs/flow_chart/features/winner_screen.png"></details>
+<img src="docs/test-user-stories/read_post.png"></details>
 <hr>
 
     5."As a user of the site, I want to be able to View comments under each post."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Comments section under blog post| The user can read comments left by other users that have visited the site| The user can read the post on the site| Works as expected|
 
 <details><summary>User Testing 5</summary>
 <img src="docs/flow_chart/features/game_feedback.png"></details>
