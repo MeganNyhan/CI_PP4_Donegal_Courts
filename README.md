@@ -232,8 +232,8 @@
     <li> Back Button: Directly under the post title is a back button the user can use to look through the other blog posts.</li>
     <li> Like: The user can like the post and the like will be counted. The user can only like the post if they are logged in with an account. </li>
     <li> User Profile: The admin has a section under the post that displays the authors bio, urls and a link to the authors user profile on the site. The user profile is an oppurtunity for the author to add a bio about themselves that highlights their experiecnce and education. </li>
-    <li> Comment Section/ Comment Form: The comment section is an area under the blog post that allows the user of the site to add comments to the blog post to help create a public discussion on each blog post that is on the site. The users of the site, if logged in, are freely allowed to post in real-time, but if its offensive the admin can delete it in the admin section of the site.<li>
-    <li> Delete and Edit Section: If the user is a superuser of the site they will be able to delete and edit the blog post as the want using forms. <li>
+    <li> Comment Section/ Comment Form: The comment section is an area under the blog post that allows the user of the site to add comments to the blog post to help create a public discussion on each blog post that is on the site. The users of the site, if logged in, are freely allowed to post in real-time, but if its offensive the admin can delete it in the admin section of the site.</li>
+    <li> Delete and Edit Section: If the user is a superuser of the site they will be able to delete and edit the blog post as the want using forms. </li>
 </ul>
     <p> User Stories covered:4, 5, 6</p>
     <p>Site Owner's Stories covered: 4 </p>
@@ -448,9 +448,9 @@
 
 ## Deployment:
 
-### Deploying to Heroku
+### Deploying to Heroku (Automatic)
 
-<ol> 
+<ul> 
 <li> Use pip3 freeze > requirements.txt in terminal to save libraries that need to be installed on Heroku as well.</li>
 <li> Create Procfile and add web: gunicorn blog.wsgi.</li>
 <li> Log in to Heroku.</li>
@@ -466,7 +466,13 @@
 <li> Search for a repository and connect to it.</li>
 <li> Click the button enable automatic deploys and the button deploy branch.</li>
 <li> Wait for the app to build and then click the rview button.</li>
+</ul>
 <br>
+
+### Deploying to Heroku (Automatic)
+<ul>
+
+</ul>
 
 ### Forking a Repository
 
