@@ -469,7 +469,7 @@
 </ul>
 <br>
 
-### Deploying to Heroku (Automatic)
+### Deploying to Heroku (Manual CLI)
 <ul>
 <p> In Gitpod terminal; </p>
 <li>enter in 'heroku login -i'</li>
