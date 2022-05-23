@@ -471,7 +471,13 @@
 
 ### Deploying to Heroku (Automatic)
 <ul>
-
+<p> In Gitpod terminal; </p>
+<li>enter in 'heroku login -i'</li>
+<li> Then enter 'heroku apps</li>
+<li> Set the heroku remote > enter into the terminal 'heroku git:remote -a 'your app name'</li>
+<li> git add . and git commit -m </li>
+<li> git push origin main </li>
+<li> git push heroku main </li>
 </ul>
 
 ### Forking a Repository

@@ -25,4 +25,4 @@ urlpatterns = [
     path('members/', include('members.urls')),
     path('contact', include('django.contrib.auth.urls')),
     path('contact/', include('contact.urls'))
-] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
