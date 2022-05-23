@@ -405,40 +405,39 @@
     1."As an authorized owner of the site, I want to be able to Post Stories to the site."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Django admin section| The admin can create blog post to be displayed in the site| The admin can create a blog post in their admin section to be displayed in the site | Works as expected|
+|Django admin section| The admin can create blog post to be displayed in the site| The admin can create a blog post in their admin section to be displayed on the site | Works as expected|
 
 <details><summary>User Testing 8</summary>
-<img src="docs/flow_chart/features/intro_screen.png"></details>
+<img src="docs/test-user-stories/post_admin.png"></details>
 <hr>
 
     2."As an authorized owner of the site, I want to be able to Create story drafts to come back to."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-
+|Django admin section| The admin can create blog post to be displayed in the site. If the user doesn't want to post the blog post right away they can save it as a draft and come back to it| The admin can create a blog post in their admin section and save it as a draft | Works as expected|
 
 <details><summary>User Testing 9</summary>
-<img src="docs/flow_chart/features/game_play.png">
+<img src="docs/test-user-stories/post_admin.png">
 </details>
 <hr>
 
     3."As an authorized owner of the site, I want to be able to Manage site content."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Django admin section| The admin can create a blog post, delete a blog post, post comments and delete comments on posts to be displayed in the site.| The admin can create a blog post, delete a blog post, post comments and delete comments in their admin section | Works as expected|
 
 <details><summary>User Testing 10</summary>
-<img src="docs/flow_chart/features/intro_screen.png">
-<img src="docs/flow_chart/features/game_play.png">
-<img src="docs/flow_chart/features/loser_screen.png">
-<img src="docs/flow_chart/features/winner_screen.png">
+<img src="docs/test-user-stories/admin-control.png">
 </details>
 <hr>
 
     4."As an authorized owner of the site, I want to be able to Manage comments under posts."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Django admin section| The admin can delete comments on posts to be displayed in the site.| The admin can delete comments in their admin section, if the comments are offensive etc. | Works as expected|
 
 <details><summary>User Testing 11</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/manage_comment.png"></details>
 <hr>
 
 ## Bugs:
@@ -512,6 +511,7 @@
         <li> Other images used were from donegal daily in their court posts with no clear owner.</li>
 <hr>
 <br>
+
 ## Acknowledgements:
 <p> I would like to take this oppurtuinity to thank and acknowlege the following people:
 <ul>
