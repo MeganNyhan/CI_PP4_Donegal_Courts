@@ -339,6 +339,7 @@
     1."As a user of the site, I want to be able to Browse through content on the website."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+Home section of blog post site| The user can scroll through the content uploaded by the site admin| The user can browse through the content on the site| Works as expected
 
 <details><summary>User Testing 1</summary>
 <img src="docs/flow_chart/features/game_play.png">
