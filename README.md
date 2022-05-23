@@ -376,26 +376,28 @@
     5."As a user of the site, I want to be able to View comments under each post."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Comments section under blog post| The user can read comments left by other users that have visited the site| The user can read the post on the site| Works as expected|
+|Comments section under blog post| The user can read comments left by other users that have visited the site| The user can read the comments for posts on the site| Works as expected|
 
 <details><summary>User Testing 5</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/view_comment.png"></details>
 
 <hr>
 
     6."As an authorized user of the site, I want to be able to Post Comments."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Comments section under blog post| The user can create and post comments under the blog posts| The user can create the comments for posts on the site| Works as expected|
 
 <details><summary>User Testing 6</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/post_comment.png"></details>
 
    7."As a user of the site, I want to be able to Register for an account."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Register Section in Nav Bar| The user can create an account with the site| The user can create their account and leave comments if wanted | Works as expected|
 
 <details><summary>User Testing 7</summary>
-<img src="docs/flow_chart/features/game_feedback.png"></details>
+<img src="docs/test-user-stories/register.png"></details>
 
 
 ### Testing Site Owner's Stories
@@ -403,6 +405,7 @@
     1."As an authorized owner of the site, I want to be able to Post Stories to the site."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+|Django admin section| The admin can create blog post to be displayed in the site| The admin can create a blog post in their admin section to be displayed in the site | Works as expected|
 
 <details><summary>User Testing 8</summary>
 <img src="docs/flow_chart/features/intro_screen.png"></details>
