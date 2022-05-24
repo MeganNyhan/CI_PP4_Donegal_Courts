@@ -7,8 +7,6 @@ from .models import Post, Comment
 from .forms import EditForm, CommentForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
-from django.contrib import messages
-
 
 class HomeView(ListView):
     """
