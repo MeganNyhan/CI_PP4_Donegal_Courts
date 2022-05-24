@@ -288,19 +288,34 @@
 <p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
 
 <details><summary>Home Page</summary>
+<img src="docs/html/home.html.png"></details>
+<details><summary>Add Comment </summary>
+<img src="docs/html/add_comment.html.png"></details>
+<details><summary>Base</summary>
+<img src="docs/html/base.html.png"></details>
+<details><summary>Delete Pose</summary>
+<img src="docs/html/delete-post.png"></details>
+<details><summary>Update Post</summary>
+<img src="docs/html/update-post.html.png"></details>
+<br>
+
+<details><summary>Contact</summary>
 <img src=""></details>
-<details><summary>-</summary>
-<img src=""></details>
-<details><summary>-</summary>
-<img src=""></details>
-<details><summary>-</summary>
-<img src=""></details>
-<details><summary>-</summary>
-<img src=""></details>
-<details><summary>-</summary>
-<img src=""></details>
-<details><summary>-</summary>
-<img src=""></details>
+<br>
+
+<details><summary>Change Password</summary>
+<img src="docs/html/change-pass.png"></details>
+<details><summary>Edit Profile</summary>
+<img src="docs/html/edit-profile.png"></details>
+<details><summary>Login</summary>
+<img src="docs/html/login.png"></details>
+<details><summary>Password Success</summary>
+<img src="docs/html/pass_success.png"></details>
+<details><summary>Register</summary>
+<img src="docs/html/reg.png"></details>
+<details><summary>User Profile</summary>
+<img src="docs/html/user-prof.png"></details>
+<br>
 
 ### CSS Validation
 <p> To Validate my CSS I used the Jigsaw W3 Validator. All CSS code passed its Validation with no errors or warnings as shown below in the pictures.</p>
