@@ -339,7 +339,7 @@
 <img src="docs/accessibility/article-update.png"></details>
 
 ### Performance
-<p> To Validate the Performance of the site I used the lighthosue tool in the browsers develpoments tools.</p>
+<p> To Validate the Performance of the site I used the lighthosue tool in the browser'git ps develpoments tools.</p>
 
 <details><summary>Home</summary>
 <img src=""></details>

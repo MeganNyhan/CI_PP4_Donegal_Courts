@@ -45,18 +45,6 @@ class UpdatePostView(UpdateView):
     template_name = 'update_post.html'
 
 
-def UpdateMessage(request):
-    if request.method == "POST":
-        form = EditForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-        messages.success(request, ('Your post has been updated successfully.'))
-        return render(request, 'post_detail.html', {})
-   
-    else:
-        return render(request, 'update_post.html', {})
-
-
 class DeletePostView(DeleteView):
     """
         Edite post view for editing/updating blog posts on the site
