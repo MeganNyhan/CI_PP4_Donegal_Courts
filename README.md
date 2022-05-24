@@ -314,6 +314,33 @@
 <details><summary>Home page</summary>
 <img src="docs/accessibility/home.png"></details>
 
+<details><summary>Contact page</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Login page</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Register</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Post Details</summary>
+<img src="docs/accessibility/post_detail.png"></details>
+
+<details><summary>User Profile</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Comment Form</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Delete Post</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Update Post</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Home page</summary>
+<img src="docs/accessibility/home.png"></details>
+
 ### Performance
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
 
