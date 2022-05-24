@@ -311,8 +311,8 @@
 ### Accessibility
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
 
-<details><summary>CSS Validation</summary>
-<img src="docs/validation/css_validation.png"></details>
+<details><summary>Home page</summary>
+<img src="docs/accessibility/home.png"></details>
 
 ### Performance
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
