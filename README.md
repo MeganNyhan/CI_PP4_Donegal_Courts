@@ -367,16 +367,6 @@
 
 <details><summary>Update Post</summary>
 <img src="docs/accessibility/article-update.png"></details>
-
-### Automatic Testing
-<p> To Validate my Python I used the PEP8 Online Validation Service. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
-
-<details><summary>-</summary>
-<img src=""></details>
-
-<details><summary>-</summary>
-<img src=""></details>
-
 <hr>
 
 ### Testing User Stories
