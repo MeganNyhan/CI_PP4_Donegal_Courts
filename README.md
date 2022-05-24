@@ -330,7 +330,7 @@
 <img src="docs/accessibility/user-profile.png"></details>
 
 <details><summary>Comment Form</summary>
-<img src="docs/accessibility/home.png"></details>
+<img src="docs/accessibility/comment-form.png"></details>
 
 <details><summary>Delete Post</summary>
 <img src="docs/accessibility/article-delete.png"></details>
