@@ -339,10 +339,34 @@
 <img src="docs/accessibility/article-update.png"></details>
 
 ### Performance
-<p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
+<p> To Validate the Performance of the site I used the lighthosue tool in the browsers develpoments tools.</p>
 
-<details><summary>-</summary>
+<details><summary>Home</summary>
 <img src=""></details>
+
+<details><summary>Contact page</summary>
+<img src="docs/accessibility/contact-wave.png"></details>
+
+<details><summary>Login page</summary>
+<img src="docs/accessibility/home.png"></details>
+
+<details><summary>Register</summary>
+<img src="docs/accessibility/register.png"></details>
+
+<details><summary>Post Details</summary>
+<img src="docs/accessibility/post_detail.png"></details>
+
+<details><summary>User Profile</summary>
+<img src="docs/accessibility/user-profile.png"></details>
+
+<details><summary>Comment Form</summary>
+<img src="docs/accessibility/comment-form.png"></details>
+
+<details><summary>Delete Post</summary>
+<img src="docs/accessibility/article-delete.png"></details>
+
+<details><summary>Update Post</summary>
+<img src="docs/accessibility/article-update.png"></details>
 
 ### Automatic Testing
 <p> To Validate my Python I used the PEP8 Online Validation Service. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>

@@ -34,15 +34,7 @@ ALLOWED_HOSTS = ['*',
                  'https://donegal-courts.herokuapp.com',
                  'localhost']
 
-# Message Storage
-
-MESSAGE_TAGS = {
-        messages.DEBUG: 'alert-info',
-        messages.INFO: 'alert-info',
-        messages.SUCCESS: 'alert-success',
-        messages.WARNING: 'alert-warning',
-        messages.ERROR: 'alert-danger',
- }
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
@@ -71,6 +63,16 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+# Message Storage
+
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-info',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.WARNING: 'alert-warning',
+        messages.ERROR: 'alert-danger',
+ }
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
