@@ -1,13 +1,14 @@
 # Imports
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from django.views.generic import DetailView
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.contrib.auth.views import PasswordChangeView, PasswordChangeForm
 from django.urls import reverse_lazy
-from .forms import SignUpForm, EditProfileForm, PasswordChangingForm
-from blog.models import Carousel
+from django.contrib import messages
+from django.http import HttpResponse
+from django.core.mail import BadHeaderError
 from blog.models import Profile
+from .forms import SignUpForm, EditProfileForm, PasswordChangingForm
 
 
 class PasswordsChangeView(PasswordChangeView):
@@ -18,8 +19,8 @@ class PasswordsChangeView(PasswordChangeView):
     success_url = reverse_lazy('password_success')
 
 
-def password_success(request):
-    return render(request, 'registration/password_success.html', {})
+def password_success(request):  # Password Success
+    return render(request, 'registration/password_success.html', {}) 
 
 
 class UserRegisterView(generic.CreateView):
@@ -29,6 +30,25 @@ class UserRegisterView(generic.CreateView):
     form_class = SignUpForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
+
+
+def register(request):
+    """
+        Validation in form
+    """
+    if request.method == "POST":
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            try:
+                return redirect('/')
+            except BadHeaderError:
+                return HttpResponse('Invalid header found')
+            messages.success(request, 'You have Successfully registered')
+            return redirect('login.html')
+        messages.error(request, "Error. Account not created please try again.")
+
+        form = SignUpForm()
+    return render(request, 'base.html', {'form': form})
 
 
 class UserEditView(generic.UpdateView):

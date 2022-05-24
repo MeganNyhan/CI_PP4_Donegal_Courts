@@ -197,7 +197,7 @@
 <li> quickdatabasedesign.com </li>
 <li> Heroku </li>
 <li> Django </li>
-<li> BootStap 5 </li>
+<li> BootStrap 5 </li>
 </ul>
 <hr>
 
@@ -479,7 +479,33 @@
 ## Bugs:
 
 | **Bug** | **Fix** |
-<p> I have not found any bugs in my code.</p>
+<p> I couldn't get my django messaging to work and therefore tried to create a backup messaging service using Ajax. I called tutors, looked for hours on google, stackover flow and youtube and I just couldn't figure out on time why my messages weren't working. Below is a list of resources I used to try and figure out the error.</p>
+
+<ul>
+<li>https://ordinarycoders.com/blog/article/extend-and-include-django-template-tags</li>
+<li>https://docs.djangoproject.com/en/4.0/ref/contrib/messages/</li>
+<li>https://www.javatpoint.com/django-form-validation</li>
+<li>https://www.youtube.com/watch?v=Mf_97YaUKag</li>
+</ul>
+
+<p> When talking to tutor support they suggest the following which I tried with no success:</p>
+
+<ul>
+<li>Suggestion 1: Make use of the Google console - I can see that there is an error coming from the js, so i would recommend you make more use of these tools to help improve your debugging skills and get you through this issue.
+</li>
+<li>
+Suggestion 2: Double check that the bootstrap version is not causing issues with the js functionality - this is a very common thing to see. You may want to check the exact version used in the walkthrough, or do some further research into how to apply messages for your specific bootstrap version.
+</li>
+<li>
+Suggestion 3: Run through the course materials again and use diffchecker to check the source code versus your own to highlight any obvious errors.
+</li>
+<li>
+With this in mind, we recommend:
+ -  Recommendation 1: Reviewing the following lessons and resources, which are directly applicable to the code you are currently working on:
+ - Recommendation 2: If you are stuck overall, chat to your mentor, and come up with a clear plan (a set of concise steps which you feel comfortable implementing) which will achieve a passing grade, and work on that.
+ - Recommendation 3: Google is a programmer’s best friend. Everybody gets stuck at some point when coding, and the first thing they do is turn to Google. If you’re struggling with a particular piece of functionality or don’t understand what a particular line of code does, try Googling it! Every built-in function has extensive documentation available online. For example, W3Schools contains detailed explanations on every piece of HTML, CSS, JavaScript, and Python code you could think of. For example, here’s their doc for the JavaScript Array.indexOf() function: https://www.w3schools.com/jsref/jsref_indexof_array.asp They provide working code examples, descriptions of the function, and information about similar functions!
+</li>
+</ul>
 <hr>
 
 ## Deployment:
