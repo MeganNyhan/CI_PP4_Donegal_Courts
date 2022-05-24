@@ -23,7 +23,7 @@
 <!--- Nav-Bar Boostrap Code -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}"><i class="fa-solid fa-gavel"></i> Donegal Courts</a>
+          <a class="navbar-brand" href="{% url 'home' %}"><i class="fa-solid fa-gavel" aria-label="home page"></i> Donegal Courts</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,23 +37,23 @@
               </li>
             </ul>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Profile</a></li>
+              <li><a class="dropdown-item" href="{% url 'edit_profile' %}" aria-label="edit-profile">Edit Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}" aria-label="log out">Log Out</a></li>
             </ul>
               {% else %}
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Court News</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}" aria-label="home link">Court News</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="are you a member? dropdown menu">
                   Are you a Member?
                 </a>
               </li>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
+                  <li><a class="dropdown-item" href="{% url 'login' %}" aria-label="login">Login</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
+                  <li><a class="dropdown-item" href="{% url 'register' %}" aria-label="register">Register</a></li>
                 </ul>
               {% endif %}
           </div>
@@ -87,7 +87,7 @@
             <p class="text-white">
               For more information on posts, please contact Donegal Daily <br> by calling:+087 164 1160, or by emailing: info@donegaldaily.com
             </p>
-            <p class="text-white"> You can also contact us throught the contact form on our contact page: <br><a href="{% url 'contact' %}"> Contact Us</a>
+            <p class="text-white"> You can also contact us throught the contact form on our contact page: <br><a href="{% url 'contact' %}" aria-label="contact link"> Contact Us</a>
             </p>
           </div>
           <!--Grid column-->
@@ -98,7 +98,7 @@
       <!-- Copyright -->
       <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2022 Donegal Courts:
-        <a class="text-white" href="https://www.donegaldaily.com/" target="_blank">www.donegaldaily.com</a>
+        <a class="text-white" href="https://www.donegaldaily.com/" target="_blank" aria-label="website link">www.donegaldaily.com</a>
       </div>
       <!-- Copyright -->
     </footer>

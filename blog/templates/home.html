@@ -48,7 +48,7 @@
         <div class="col-md-8">
           <div class="card-body bg-white">
             <br/><br/>
-            <a href="{% url 'post-detail' post.pk %}" class="post-link">
+            <a href="{% url 'post-detail' post.pk %}" class="post-link" >
             <h1 class="card-title"><strong>{{ post.title }}</strong></h1>
             <p class="card-text text-black">{{post.snippet}}</p></a>
             <p class="card-text text-black"><small><strong>{{ post.author }}</strong> | {{ post.post_date}}</small></p>

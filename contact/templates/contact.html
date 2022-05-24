@@ -8,7 +8,7 @@
               <h4 class="text-center"> <strong>Thanks {{name}}!</strong>  We have recieved your email and will get back to you shortly</h4>
               <br/>
               <div class="col-md-12 text-center">
-                <a class="btn text-center btn-dark" href="{% url 'home' %}"> Return to the home page</a>
+                <a class="btn text-center btn-dark" href="{% url 'home' %}" aria-label="home"> Return to the home page</a>
               </div>
             </div>
    {%else%}
@@ -70,7 +70,6 @@
                 </div>
               </form>
               {% endif %}
-
               <br/><br/><br/>
             </div>
           </div>
