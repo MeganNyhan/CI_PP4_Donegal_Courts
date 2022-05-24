@@ -17,7 +17,7 @@
             <small> By: {{ post.author.first_name }} - {{ post.post_date }}</small>
         <br/><br/>
 <!-- The featured image -->
-            <img src="{{ post.featured_image.url }}">
+            <img src="{{ post.featured_image.url }}" alt="Articles Featured Image">
         <br/>
 <!-- Post Body Goes Here -->
         <div class="post-body">
@@ -42,7 +42,7 @@
         <div class="row g-0">
             <div class="col-md-2">
                 <div class="profile-pic">
-                    <img class="rounded-circle" src="{{ post.author.profile.profile_pic.url }}">
+                    <img class="rounded-circle" src="{{ post.author.profile.profile_pic.url }}" alt="Authors Image">
                 </div>
             </div>
           <div class="col-md-10">
