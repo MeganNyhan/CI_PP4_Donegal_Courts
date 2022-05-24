@@ -1,4 +1,6 @@
-# Imports
+"""
+    Imports
+"""
 from django import forms
 from .models import Post, Comment
 
@@ -12,11 +14,15 @@ class EditForm(forms.ModelForm):
         fields = ('title', 'snippet', 'body')
 
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'This is the Title Input'}),
+            'title': forms.TextInput(attrs={'class': 'form-control',
+                                            'placeholder':
+                                            'This is the Title Input'}),
             'snippet': forms.Textarea(attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'This is the Body Text Input'})
+            'body': forms.Textarea(attrs={'class': 'form-control',
+                                          'placeholder':
+                                          'This is the Body Text Input'})
         }
-    
+
 
 class CommentForm(forms.ModelForm):
     """
@@ -30,4 +36,3 @@ class CommentForm(forms.ModelForm):
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'})
         }
-

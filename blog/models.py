@@ -4,7 +4,6 @@ imports from Django.
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
-from ckeditor.fields import RichTextField
 from cloudinary.models import CloudinaryField
 
 # This tuple will keep track of drafted posts and published posts
@@ -13,7 +12,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Profile(models.Model):
     """ 
-    Creates User Profile Model
+        Creates User Profile Model
     """
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     bio = models.TextField()
@@ -61,7 +60,8 @@ class Comment(models.Model):
     This comment model will allow me to post a comment under the
     posts.
     """
-    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, related_name="comments",
+                             on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     body = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)

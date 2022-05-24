@@ -1,9 +1,11 @@
-# imports
-from django.shortcuts import render, redirect, get_object_or_404 
+"""
+    imports
+"""
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
 from .forms import EditForm, CommentForm
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 from django.contrib import messages
 
