@@ -303,19 +303,16 @@
 <img src=""></details>
 
 ### CSS Validation
-<p> To Validate my CSS I used the Jigsaw W3 Validator. All CSS code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+<p> To Validate my CSS I used the Jigsaw W3 Validator. All CSS code passed its Validation with no errors or warnings as shown below in the pictures.</p>
 
-<details><summary>-</summary>
-<img src=""></details>
-
-<details><summary>-</summary>
-<img src=""></details>
+<details><summary>CSS Validation</summary>
+<img src="docs/validation/css_validation.png"></details>
 
 ### Accessibility
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
 
-<details><summary>-</summary>
-<img src=""></details>
+<details><summary>CSS Validation</summary>
+<img src="docs/validation/css_validation.png"></details>
 
 ### Performance
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
