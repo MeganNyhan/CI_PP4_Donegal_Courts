@@ -34,12 +34,12 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Hello, {{ user.first_name}}!
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
-                </ul>
               </li>
+            </ul>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
             </ul>
               {% else %}
               <li class="nav-item">
@@ -49,6 +49,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Are you a Member?
                 </a>
+              </li>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -57,7 +58,7 @@
               {% endif %}
           </div>
           <ul class="navbar-nav mr-auto">
-            </li><p class="tag-line"> <i>A week in the Courts</i></p></li>
+            </li class="tag-line"><i>A week in the Courts</i></li>
           </ul>
         </div>
       </nav>
@@ -83,7 +84,6 @@
           <!--Grid column-->
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase text-white">Contact Us:</h5>
-    
             <p class="text-white">
               For more information on posts, please contact Donegal Daily <br> by calling:+087 164 1160, or by emailing: info@donegaldaily.com
             </p>
