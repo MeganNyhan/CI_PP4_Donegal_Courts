@@ -35,7 +35,6 @@ ALLOWED_HOSTS = ['*',
                  'localhost']
 
 # Message Storage
-MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-info',
