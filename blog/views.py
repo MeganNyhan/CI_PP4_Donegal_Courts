@@ -1,12 +1,14 @@
 """
     imports
 """
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import  get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Comment
-from .forms import EditForm, CommentForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
+from django.contrib.message.views import SuccessMessageMixin
+from .models import Post, Comment
+from .forms import EditForm, CommentForm
+
 
 
 class HomeView(ListView):
@@ -42,6 +44,7 @@ class UpdatePostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
+    success_message = "%(name)s Your Post was Updated Successfully"
 
 
 class DeletePostView(DeleteView):
@@ -53,7 +56,7 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('home')
 
 
-class AddCommentView(CreateView):
+class AddCommentView(SuccessMessageMixin, CreateView):
     """
         Create Add post view for creating blog posts on the site
     """
@@ -61,6 +64,7 @@ class AddCommentView(CreateView):
     form_class = CommentForm
     template_name = 'add_comment.html'
     success_url = reverse_lazy('home')
+    success_message = "%(name)s Your comment was Created Successfully"
 
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
