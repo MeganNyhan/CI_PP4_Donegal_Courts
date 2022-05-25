@@ -8,6 +8,7 @@ from .forms import EditForm, CommentForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 
+
 class HomeView(ListView):
     """
         Create view for blog post list in home page

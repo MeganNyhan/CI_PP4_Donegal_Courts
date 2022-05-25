@@ -90,7 +90,6 @@
 <li> Profile </li>
 <li> Post </li>
 <li> Comment </li>
-<li> Carousel </li>
 <li> Contact </li>
 </ul>
 <ul>
@@ -109,11 +108,6 @@
 <li> This comment model will allow users to post comments under the blog post.</li>
 <li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
 <li> It includes the following fields: post, name, body, date_added.</li>
-<br>
-<p> Carousel: </p>
-<li> This carousel model was to create a Carousel on the site that could be edited by the admin in the admin section.</li>
-<li> It is used by the Admin to post images to sections where this model is used. </li>
-<li> It includes the following fields: image, title and sub-title.</li>
 <br>
 <p> Contact: </p>
 <li> This contact model will allow me to save the contact forms that are sent to the admin of the site, and store the details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
@@ -257,7 +251,6 @@
     <li>Posts: The post section is the area where the admin can create, draft and delete blog posts that will be displayed on the site. The content uploaded to thei section contains: title, snippet, image, body, author, category, and title tag.</li>
     <li> Comments: The section where the admin can view the comments left on the blog posts and delete, manage or keep.</li>
     <li> Profile: This is the section that stores the User information created by visitors. </li>
-    <li> Carousel: The carousel section didn't make it onto the site but it is to allow the admin to use a carousel section that is conneced to the back end.<li>
 </ul>
     <p> User Stories covered: 0 </p>
     <p>Site Owner's Stories covered: 1, 2, 3, 4 </p>
@@ -269,8 +262,6 @@
         <img src="docs/user-stories/comments.png"></details>
         <details><summary>Profile</summary>
         <img src="docs/user-stories/profile.png"></details>
-        <details><summary>Carousel</summary>
-        <img src="docs/user-stories/carousel.png"></details>
 <hr>
 
 ## Testing:
@@ -300,7 +291,7 @@
 <br>
 
 <details><summary>Contact</summary>
-<img src=""></details>
+<img src="docs/html/contact.html.png"></details>
 <br>
 
 <details><summary>Change Password</summary>
@@ -520,6 +511,7 @@ With this in mind, we recommend:
  - Recommendation 2: If you are stuck overall, chat to your mentor, and come up with a clear plan (a set of concise steps which you feel comfortable implementing) which will achieve a passing grade, and work on that.
  - Recommendation 3: Google is a programmer’s best friend. Everybody gets stuck at some point when coding, and the first thing they do is turn to Google. If you’re struggling with a particular piece of functionality or don’t understand what a particular line of code does, try Googling it! Every built-in function has extensive documentation available online. For example, W3Schools contains detailed explanations on every piece of HTML, CSS, JavaScript, and Python code you could think of. For example, here’s their doc for the JavaScript Array.indexOf() function: https://www.w3schools.com/jsref/jsref_indexof_array.asp They provide working code examples, descriptions of the function, and information about similar functions!
 </li>
+<p> I am stuck tryin to fix this at them moment, I have tried the tutors recommendations but with no luck. I think I would try restart the page and see if there was a deeper issue in the page I can't see at the moment.</p>
 </ul>
 <hr>
 
