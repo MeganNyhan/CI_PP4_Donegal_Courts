@@ -327,7 +327,7 @@
 <img src="docs/accessibility/contact-wave.png"></details>
 
 <details><summary>Login page</summary>
-<img src="docs/accessibility/home.png"></details>
+<img src="docs/accessibility/login_access.png"></details>
 
 <details><summary>Register</summary>
 <img src="docs/accessibility/register.png"></details>

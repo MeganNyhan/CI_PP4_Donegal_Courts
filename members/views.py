@@ -80,7 +80,8 @@ class ShowProfilePageView(DetailView):
 
     def get_context_data(self, *args, **kwargs):
         users = Profile.objects.all()
-        context = super(ShowProfilePageView, self).get_context_data(*args, **kwargs)
+        context = super(ShowProfilePageView, self).get_context_data(*args,
+                                                                    **kwargs)
 
         page_user = get_object_or_404(Profile, id=self.kwargs['pk'])
 
