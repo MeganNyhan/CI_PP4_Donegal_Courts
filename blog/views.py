@@ -67,6 +67,8 @@ class AddCommentView(CreateView):
         return super().form_valid(form)
 
 
+
+
 def LikeView(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
     post.likes.add(request.user)

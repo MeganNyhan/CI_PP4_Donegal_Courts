@@ -262,6 +262,8 @@
         <img src="docs/user-stories/comments.png"></details>
         <details><summary>Profile</summary>
         <img src="docs/user-stories/profile.png"></details>
+        <details><summary>Profile</summary>
+        <img src="docs/user-stories/admin-contact.png"></details>
 <hr>
 
 ## Testing:

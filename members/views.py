@@ -13,14 +13,14 @@ from .forms import SignUpForm, EditProfileForm, PasswordChangingForm
 
 class PasswordsChangeView(PasswordChangeView):
     """
-        Chnage Password function
+        Change Password function
     """
     form_class = PasswordChangingForm
     success_url = reverse_lazy('password_success')
 
 
 def password_success(request):  # Password Success
-    return render(request, 'registration/password_success.html', {}) 
+    return render(request, 'registration/password_success.html', {})
 
 
 class UserRegisterView(generic.CreateView):
