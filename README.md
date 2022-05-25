@@ -270,13 +270,51 @@
 ## Testing:
 
 ### Python Validation
-<p> To Validate my Python I used the PEP8 Online Validation Service. All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+<p> To Validate my Python I used the ExtendsClass Free Online Toolbox for developers (https://extendsclass.com/python-tester.html). All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
 
-<details><summary>-</summary>
-<img src=""></details>
+<h4> Blog (App)</h4>
+<details><summary>admin.py</summary>
+<img src="docs/python-validation/admin.blog.png"></details>
 
-<details><summary>-</summary>
-<img src=""></details>
+<details><summary>forms.py</summary>
+<img src="docs/python-validation/forms.blog.png"></details>
+
+<details><summary>models.py</summary>
+<img src="docs/python-validation/models.blog.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/urls.blog.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/views.blog.png"></details>
+
+<h4> Members (App)</h4>
+<details><summary>forms.py</summary>
+<img src="docs/python-validation/forms.members.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/urls.memeber.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/views.memebers.png"></details>
+
+<h4> Contact (App)</h4>
+<details><summary>admin.py</summary>
+<img src="docs/python-validation/admin.contact.png"></details>
+
+<details><summary>forms.py</summary>
+<img src="docs/python-validation/form.contact.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/urls.contact.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/views.contact.png"></details>
+
+<details><summary>models.py</summary>
+<img src="docs/python-validation/models.contact.png"></details>
+
+<br>
 
 ### HTML Validation
 <p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with a few errors as documented below. All errors are due to using the django/python framework.</p>
