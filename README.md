@@ -191,6 +191,7 @@
 <li> Heroku </li>
 <li> Django </li>
 <li> BootStrap 5 </li>
+<li> Ajax</li>
 </ul>
 <hr>
 
