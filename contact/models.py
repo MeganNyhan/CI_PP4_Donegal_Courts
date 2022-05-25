@@ -11,7 +11,7 @@ class Contact(models.Model):
     """
     name = models.CharField(max_length=150, blank=False, null=True)
     email = models.EmailField(default='DEFAULT VALUE', blank=True, null=True)
-    message = models.CharField(max_length=1500, blank=False, null=True)
+    message = RichTextField(max_length=1500, blank=False, null=True)
 
     def __str__(self):
         return str(self.email)
