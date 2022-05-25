@@ -5,7 +5,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from cloudinary.models import CloudinaryField
-from ckeditor.fields import RichTextField
+from django import forms
 
 # This tuple will keep track of drafted posts and published posts
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -39,7 +39,8 @@ class Post(models.Model):
     snippet = models.CharField(max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.CharField(max_length=255, null=True)
-    body = RichTextField()
+    body = models.CharField(max_length=2550, null=True,
+                            widget=forms.TextInput(attrs={'size': '80'}))
     post_date = models.DateField(auto_now_add=True)
     likes = models.ManyToManyField(User, related_name='blog_posts')
 
