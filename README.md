@@ -7,7 +7,7 @@
 <ul>
     <li> The main goal of this project is to create a platform for locals of Donegal to have a place to read and stay informed about the goings on.</li>
     <li>It also aims to create a place for locals to have a public platform (through a comments section) about the stories that have come out of the recent court hearings.</li>
-    <li> Finally, the blog will be fully functional from an admin point of view where the admin can manage posts that will be display on the site. They are also responisble for adding content to the site, so any posts that are written need to be editable. they can also choose once comments are posted by users that if the comment is abusive or harmfile thay can be deleted.</li>
+    <li> Finally, the blog will be fully functional from an admin point of view where the admin can manage posts that will be display on the site. They are also responisble for adding content to the site, so any posts that are written need to be editable. They can also choose once comments are posted by users that if the comment is abusive or harmful thay can be deleted.</li>
 </ul>
 <hr>
 
@@ -49,8 +49,8 @@
 <ul>
     <li>Have a clear understanding of the layout of the site -> clear navigation.</li>
     <li>The blog has to be formal and factual, information on the site has to be easily accessibile to the user.</li>
-    <li>The option of customizing the blog posts by the owner has to be limited ot the authorisation. A random user of the blog can not have permition to comment or post on the blog.</li>
-    <li> As the topics discussed on the site contain sensitive information,I want the admin to be able to choose what comments get posted or not.
+    <li>The option of customizing the blog posts by the owner has to be limited it the authorisation. A random user of the blog can not have permition to comment or post on the blog.</li>
+    <li> As the topics discussed on the site contain sensitive information, I want the admin to be able to choose what comments get posted or not.
 </ul>
 
 ### User Stories
@@ -83,7 +83,7 @@
 <hr>
 
 ### Database 
-<p> My Database has three models:
+<p> My Database has four models:
 <p> My project uses the relational databse -> PostgreSQL.</p>
 <p> The data is handeled within the application with Django. </p>
 <ul>
@@ -117,7 +117,7 @@
 <p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue        passwords.</p>
 <p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
 <details><summary>Database Diagram</summary>
-        <img src="docs/database-diagram/diagram.png"></details>
+        <img src="docs/database-diagram/database.jpg"></details>
 <br/>
 
 ### User Manual:
@@ -128,7 +128,6 @@
 <li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow.</li>
 <li> Finally the contact Page allows the user to simply message the admin of the site to get more information or to leave a comment. The address and phone number are also on the page.</li>
 <li> The admin mainly uses the Admin section of the site to post blog posts, look at messages that were left by users of the contact form and to manage comments left in the site ie. delete abusive comments if they are left.</li>
-<li> All forms have validation as well to give real-time feedback to users.</li>
 </ol>
 
 <hr>
@@ -203,8 +202,8 @@
     <li>Slider: The slider adds a nice dynamic aspect to the site and helps users identify the site as legal in theme.</li>
     <li>Blog Post List: The blog post list includes all the blog posts on the site allowing the user to browse through the posts. You can click on these posts to read the story in more depth.</li>
     <li> Login/ Registration: The registration section allows the user to become a member of the site, leave a comment under the posts and add a bit of personalisation to the blog by adding their name to the landing page and editing their profile details.  </li>
-    <li>The logout section: Gives the users the option of signing out, this specifically removes the user from being logged into the site and the obvious chnage is the name removed from the site navbar.</li>
-    <li>Contact Us: Contact page with a contact form for the user to easily contact the admin of the site. It also contains the conract information ie. address and phone number.</li>
+    <li>The logout section: Gives the users the option of signing out, this specifically removes the user from being logged into the site and the obvious change is the name removed from the site navbar.</li>
+    <li>Contact Us: Contact page with a contact form for the user to easily contact the admin of the site. It also contains the contact information ie. address and phone number.</li>
 </ul>
  <p>User Stories covered : 1, 2, 3, 4, 7</p>
  <p>Site Owner's Stories covered: 0 </p>
@@ -251,6 +250,7 @@
     <li>Posts: The post section is the area where the admin can create, draft and delete blog posts that will be displayed on the site. The content uploaded to thei section contains: title, snippet, image, body, author, category, and title tag.</li>
     <li> Comments: The section where the admin can view the comments left on the blog posts and delete, manage or keep.</li>
     <li> Profile: This is the section that stores the User information created by visitors. </li>
+    <li>Contact: This section stores the data sent by the user to the admin via the contact for. It includes the user's name, email and message.</li>
 </ul>
     <p> User Stories covered: 0 </p>
     <p>Site Owner's Stories covered: 1, 2, 3, 4 </p>
@@ -276,7 +276,7 @@
 <img src=""></details>
 
 ### HTML Validation
-<p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
+<p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with a few errors as documented below. All errors are due to using the django/python framework.</p>
 
 <details><summary>Home Page</summary>
 <img src="docs/html/home.html.png"></details>
@@ -348,31 +348,31 @@
 <p> To Validate the Performance of the site I used the lighthosue tool in the browser'git ps develpoments tools.</p>
 
 <details><summary>Home</summary>
-<img src=""></details>
+<img src="docs/performance/home-performance.png"></details>
 
 <details><summary>Contact page</summary>
-<img src="docs/accessibility/contact-wave.png"></details>
+<img src="docs/performance/contact-performance.png"></details>
 
 <details><summary>Login page</summary>
-<img src="docs/accessibility/home.png"></details>
+<img src="ddocs/performance/login-performance.png"></details>
 
 <details><summary>Register</summary>
-<img src="docs/accessibility/register.png"></details>
+<img src="docs/performance/register-performance.png"></details>
 
 <details><summary>Post Details</summary>
-<img src="docs/accessibility/post_detail.png"></details>
+<img src="docs/performance/post-performance.png"></details>
 
 <details><summary>User Profile</summary>
-<img src="docs/accessibility/user-profile.png"></details>
+<img src="docs/performance/user-performance.png"></details>
 
 <details><summary>Comment Form</summary>
-<img src="docs/accessibility/comment-form.png"></details>
+<img src="docs/performance/comment-performance.png"></details>
 
 <details><summary>Delete Post</summary>
-<img src="docs/accessibility/article-delete.png"></details>
+<img src="docs/performance/delete-performance.png"></details>
 
 <details><summary>Update Post</summary>
-<img src="docs/accessibility/article-update.png"></details>
+<img src="docs/performance/edit-performance.png"></details>
 <hr>
 
 ### Testing User Stories
