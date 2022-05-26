@@ -18,7 +18,10 @@ def contactForm(request):
         contact.email = email
         contact.message = message
         contact.save()
-        messages.add_message(request, messages.SUCCESS, 
-                             'Your message has been sent')
+
+# If the form is filled out it will save and displat the blow message
+
+        messages.success(request, messages.SUCCESS,
+                         'Your message has been sent')
 
     return render(request, 'contact.html')
