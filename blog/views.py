@@ -43,7 +43,7 @@ class UpdatePostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
-    success_message = "%(name)s Your Post was Updated Successfully"
+    success_message = "%{name} Your Post was Updated Successfully"
 
 
 class DeletePostView(DeleteView):
@@ -55,7 +55,7 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('home')
 
 
-class AddCommentView(CreateView):
+class AddCommentView(SuccessMessageMixin, CreateView):
     """
         Create Add post view for creating blog posts on the site
     """
@@ -63,6 +63,7 @@ class AddCommentView(CreateView):
     form_class = CommentForm
     template_name = 'add_comment.html'
     success_url = reverse_lazy('base.html')
+    success_message = "%{name} Your comment was Created Successfully"
 
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
