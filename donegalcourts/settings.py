@@ -174,4 +174,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'donegalcourts12@gmail.com'
 EMAIL_HOST_PASSWORD = 'Donegal12'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-

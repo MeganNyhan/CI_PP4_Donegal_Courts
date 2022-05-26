@@ -3,6 +3,8 @@
 <img src="docs/mock-up/mock-up.png" alt="Mockup of my blog across multiple devices">
 <a href="https://donegal-courts.herokuapp.com/" alt="link to donegal courts blog" target="_blank" rel="noopener">Link to The Donegal Courts Blog</a>
 
+<p> In order to view this project correctly in github, please add the following into the terminal: "pip3 install -r requirements.txt"</p>
+
 ## Project Goals 
 <ul>
     <li> The main goal of this project is to create a platform for locals of Donegal to have a place to read and stay informed about the goings on.</li>
@@ -122,6 +124,8 @@
 
 ### User Manual:
 <ol>
+<li>The site admin username is admin (lowercase) and the password is Frious.30.</li> 
+
 <li>The Site is very simple in design - It includes a home section where a user can view a blog post, a members section for login and registration, and then a contact section located at the bottom of the webpage.</li>
 <li>The blog posts have a very simple design - the title, the post body, the author section with information of the author and the comments section for views to create a comment.</li>
     <p> -- If the user is the site admin a edit post and delete post section is added.</p>
