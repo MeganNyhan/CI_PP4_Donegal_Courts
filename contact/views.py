@@ -1,15 +1,13 @@
 """
     imports
 """
+from django.shortcuts import render
 from .models import Contact
 from django.contrib import messages
 
 
 # Create your views here.
 def contactForm(request):
-    """
-        Contact Form
-    """
     if request.method == "POST":
         contact = Contact()
         name = request.POST.get('name')
@@ -20,4 +18,7 @@ def contactForm(request):
         contact.email = email
         contact.message = message
         contact.save()
-        messages.success(request, 'Your message has been sent')
+        messages.add_message(request, messages.SUCCESS, 
+                             'Your message has been sent')
+
+    return render(request, 'contact.html')
