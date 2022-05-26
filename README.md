@@ -204,7 +204,7 @@
     <li>Blog Post List: The blog post list includes all the blog posts on the site allowing the user to browse through the posts. You can click on these posts to read the story in more depth.</li>
     <li> Login/ Registration: The registration section allows the user to become a member of the site, leave a comment under the posts and add a bit of personalisation to the blog by adding their name to the landing page and editing their profile details.  </li>
     <li>The logout section: Gives the users the option of signing out, this specifically removes the user from being logged into the site and the obvious change is the name removed from the site navbar.</li>
-    <li>Contact Us: Contact page with a contact form for the user to easily contact the admin of the site. It also contains the contact information ie. address and phone number.</li>
+    <li>Contact Us: Contact page with a contact form for the user to easily contact the admin of the site. It also contains the contact information ie. address and phone number. The contact page will have a pop-up when the form is submited to tell the user the form has been successfully submitted.</li>
 </ul>
  <p>User Stories covered : 1, 2, 3, 4, 7</p>
  <p>Site Owner's Stories covered: 0 </p>
@@ -553,6 +553,10 @@ With this in mind, we recommend:
  - Recommendation 3: Google is a programmer’s best friend. Everybody gets stuck at some point when coding, and the first thing they do is turn to Google. If you’re struggling with a particular piece of functionality or don’t understand what a particular line of code does, try Googling it! Every built-in function has extensive documentation available online. For example, W3Schools contains detailed explanations on every piece of HTML, CSS, JavaScript, and Python code you could think of. For example, here’s their doc for the JavaScript Array.indexOf() function: https://www.w3schools.com/jsref/jsref_indexof_array.asp They provide working code examples, descriptions of the function, and information about similar functions!
 </li>
 <p> I am stuck tryin to fix this at them moment, I have tried the tutors recommendations but with no luck. I think I would try restart the page and see if there was a deeper issue in the page I can't see at the moment, I have just ran out of time.</p>
+
+<p> I managed to get form validation on the contact form. I had to re-write the messages section in the base.html and add a message.addmessage to the views.py</p>
+<details><summary>Contact Form Validation</summary>
+<img src="docs/validation/form-validation.png"></details>
 </ul>
 <hr>
 

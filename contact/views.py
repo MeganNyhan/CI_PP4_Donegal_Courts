@@ -19,9 +19,9 @@ def contactForm(request):
         contact.message = message
         contact.save()
 
-# If the form is filled out it will save and displat the blow message
+# If the form is filled out it will save and display the below message
 
-        messages.success(request, messages.SUCCESS,
-                         'Your message has been sent')
+        messages.add_message(request, messages.SUCCESS,
+                             'Your message has been sent')
 
     return render(request, 'contact.html')
