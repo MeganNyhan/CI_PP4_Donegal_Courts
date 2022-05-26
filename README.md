@@ -554,6 +554,9 @@ With this in mind, we recommend:
 </li>
 <p> I am stuck tryin to fix this at them moment, I have tried the tutors recommendations but with no luck. I think I would try restart the page and see if there was a deeper issue in the page I can't see at the moment, I have just ran out of time.</p>
 
+<br>
+|<p> The other bug is the comment form, the comment posts to the site fine, the validation just doesn't work or prompt the user.</p> | <p> Just like the previous bug I would have to figure out why my form validation isn't working. I would re-write the comment form in this case though.</p>
+
 <p> I managed to get form validation on the contact form. I had to re-write the messages section in the base.html and add a message.addmessage to the views.py</p>
 <details><summary>Contact Form Validation</summary>
 <img src="docs/validation/form-validation.png"></details>
@@ -629,6 +632,7 @@ With this in mind, we recommend:
 <li> SitePoint: https://www.sitepoint.com/django-send-email/</li>
 <li> Plainenglish: https://python.plainenglish.io/how-to-create-a-contact-page-for-your-django-website-6b97dddedb2d</li>
 <li>https://learncodeweb.com: Used for the AJAX Pop-Up: https://learncodeweb.com/web-development/how-to-create-a-custom-popup-form-with-php-and-ajax/</li>
+<li>https://docs.djangoproject.com/en/4.0/ref/contrib/messages/</li>
 </ul>
 <br>
 <p> I used these videos/ articles soley as a guide I did not copy and paste.</p>
