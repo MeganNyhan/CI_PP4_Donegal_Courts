@@ -62,14 +62,12 @@ class AddCommentView(SuccessMessageMixin, CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('base.html')
     success_message = "%(name)s Your comment was Created Successfully"
 
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
         return super().form_valid(form)
-
-
 
 
 def LikeView(request, pk):
